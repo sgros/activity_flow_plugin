@@ -1,3 +1,3 @@
 Upute za pokretanje:  
-Program se pokreće predajući mu jedan argument koji predstavlja put do direktorija s izvornim kodom android aplikacije.  
+Programu je pri pokretanju potrebno predati jedan argument koji predstavlja put do direktorija s izvornim kodom android aplikacije.  
 Oblik argumenta je npr.: /home/user/AndroidApps/Application
