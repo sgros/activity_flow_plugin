@@ -1,0 +1,30 @@
+<idea-plugin>
+    <id>hr.fer.zemris.code_tree_plugin</id>
+    <name>Code Tree Creator</name>
+    <vendor>FER</vendor>
+
+    <description><![CDATA[
+    Plugin for Android Studio which analyzes decompiled .apk file and creates code tree.<br>
+    ]]></description>
+
+    <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+         on how to target different products -->
+    <!-- uncomment to enable plugin in all products-->
+    <depends>com.intellij.modules.lang</depends>
+    <depends>com.intellij.modules.platform</depends>
+    <depends>com.intellij.modules.vcs</depends>
+    <depends>com.intellij.modules.xml</depends>
+    <depends>com.intellij.modules.xdebugger</depends>
+    <idea-version since-build="162"/>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <!-- Add your extensions here -->
+    </extensions>
+
+    <actions>
+        <group id="MyPlugin.SampleMenu" text="Plugin" description="Plugin menu">
+            <add-to-group group-id="MainMenu" anchor="last"/>
+            <action id="Myplugin.Textboxes" class="PluginFront" text="Create code tree" description="Creates code tree"/>
+        </group>
+    </actions>
+</idea-plugin>
