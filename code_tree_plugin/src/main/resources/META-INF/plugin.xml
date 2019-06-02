@@ -24,7 +24,7 @@
     <actions>
         <group id="MyPlugin.SampleMenu" text="Plugin" description="Plugin menu">
             <add-to-group group-id="MainMenu" anchor="last"/>
-            <action id="Myplugin.Textboxes" class="PluginFront" text="Create code tree" description="Creates code tree"/>
+            <action id="Myplugin.Textboxes" class="code.PluginFront" text="Create code tree" description="Creates code tree"/>
         </group>
     </actions>
 </idea-plugin>
