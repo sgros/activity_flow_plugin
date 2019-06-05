@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<org.mozilla.rocket.nightmode.themed.ThemedTextView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:textColor="@color/fake_input_text" android:gravity="center" android:id="@c0426id/home_fragment_fake_input" android:background="@drawable/urlbar_background" android:layout_width="@dimen/fake_input_width" android:layout_height="@dimen/fake_input_height" android:text="@string/urlbar_hint" style="@style/Body1"/>

@@ -1,0 +1,67 @@
+package com.bumptech.glide.load.resource.bitmap;
+
+import android.annotation.TargetApi;
+import android.graphics.Bitmap.Config;
+import android.graphics.BitmapFactory.Options;
+import android.os.Build.VERSION;
+import android.util.Log;
+import com.bumptech.glide.load.DecodeFormat;
+import java.io.File;
+
+final class HardwareConfigState {
+    private static final File FD_SIZE_LIST = new File("/proc/self/fd");
+    private static volatile HardwareConfigState instance;
+    private volatile int decodesSinceLastFdCheck;
+    private volatile boolean isHardwareConfigAllowed = true;
+
+    static HardwareConfigState getInstance() {
+        if (instance == null) {
+            synchronized (HardwareConfigState.class) {
+                if (instance == null) {
+                    instance = new HardwareConfigState();
+                }
+            }
+        }
+        return instance;
+    }
+
+    private HardwareConfigState() {
+    }
+
+    /* Access modifiers changed, original: 0000 */
+    @TargetApi(26)
+    public boolean setHardwareConfigIfAllowed(int i, int i2, Options options, DecodeFormat decodeFormat, boolean z, boolean z2) {
+        if (!z || VERSION.SDK_INT < 26 || decodeFormat == DecodeFormat.PREFER_ARGB_8888_DISALLOW_HARDWARE || z2) {
+            return false;
+        }
+        boolean z3 = i >= 128 && i2 >= 128 && isFdSizeBelowHardwareLimit();
+        if (z3) {
+            options.inPreferredConfig = Config.HARDWARE;
+            options.inMutable = false;
+        }
+        return z3;
+    }
+
+    private synchronized boolean isFdSizeBelowHardwareLimit() {
+        int i = this.decodesSinceLastFdCheck + 1;
+        this.decodesSinceLastFdCheck = i;
+        if (i >= 50) {
+            boolean z = false;
+            this.decodesSinceLastFdCheck = 0;
+            int length = FD_SIZE_LIST.list().length;
+            if (length < 700) {
+                z = true;
+            }
+            this.isHardwareConfigAllowed = z;
+            if (!this.isHardwareConfigAllowed && Log.isLoggable("Downsampler", 5)) {
+                StringBuilder stringBuilder = new StringBuilder();
+                stringBuilder.append("Excluding HARDWARE bitmap config because we're over the file descriptor limit, file descriptors ");
+                stringBuilder.append(length);
+                stringBuilder.append(", limit ");
+                stringBuilder.append(700);
+                Log.w("Downsampler", stringBuilder.toString());
+            }
+        }
+        return this.isHardwareConfigAllowed;
+    }
+}

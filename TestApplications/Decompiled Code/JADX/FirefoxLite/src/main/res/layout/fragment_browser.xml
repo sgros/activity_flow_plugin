@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@c0426id/browser_root_view" android:layout_width="match_parent" android:layout_height="match_parent">
+    <org.mozilla.rocket.nightmode.themed.ThemedLinearLayout android:orientation="vertical" android:id="@c0426id/browser_container" android:background="@drawable/browser_background" android:layout_width="match_parent" android:layout_height="match_parent">
+        <org.mozilla.rocket.nightmode.themed.ThemedRelativeLayout android:id="@c0426id/background" android:background="@drawable/animated_background" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <android.support.design.widget.AppBarLayout android:layout_gravity="bottom" android:id="@c0426id/appbar" android:background="@android:color/transparent" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="26dp" app:elevation="0dp">
+                <FrameLayout android:id="@c0426id/urlbar" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_scrollFlags="0">
+                    <include layout="@layout/toolbar"/>
+                    <org.mozilla.rocket.nightmode.themed.ThemedView android:layout_gravity="bottom" android:id="@c0426id/url_bar_divider" android:background="@drawable/url_bar_divider" android:layout_width="match_parent" android:layout_height="1dp"/>
+                    <org.mozilla.focus.widget.AnimatedProgressBar android:layout_gravity="bottom" android:id="@c0426id/progress" android:layout_width="match_parent" android:layout_height="3dp" android:layout_marginBottom="-1dp" android:progressDrawable="@drawable/photon_progressbar" android:importantForAccessibility="yes" app:shiftDuration="@integer/progress_shift_duration" app:wrapShiftDrawable="true" style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"/>
+                </FrameLayout>
+            </android.support.design.widget.AppBarLayout>
+        </org.mozilla.rocket.nightmode.themed.ThemedRelativeLayout>
+        <org.mozilla.focus.widget.ResizableKeyboardLayout android:orientation="vertical" android:id="@c0426id/main_content" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="49dp">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+                <FrameLayout android:id="@c0426id/webview_slot" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+                <include android:visibility="gone" layout="@layout/find_in_page"/>
+            </LinearLayout>
+        </org.mozilla.focus.widget.ResizableKeyboardLayout>
+    </org.mozilla.rocket.nightmode.themed.ThemedLinearLayout>
+    <org.mozilla.rocket.nightmode.themed.ThemedView android:layout_gravity="bottom" android:id="@c0426id/bottom_menu_divider" android:background="@drawable/browser_menu_divider" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginBottom="@dimen/fixed_menu_height"/>
+    <include layout="@layout/fragment_browser_item_menu_button"/>
+    <FrameLayout android:id="@c0426id/video_container" android:background="@android:color/black" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</FrameLayout>

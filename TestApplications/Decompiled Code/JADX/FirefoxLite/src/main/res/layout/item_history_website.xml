@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@c0426id/history_item_root_view" android:background="@drawable/round_rectangle_ripple" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="56dp">
+        <ImageView android:id="@c0426id/history_item_img_fav" android:layout_width="24dp" android:layout_height="24dp" android:layout_marginLeft="20dp" android:src="@drawable/ic_globe" android:scaleType="fitXY"/>
+        <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_weight="1">
+            <TextView android:textSize="14sp" android:textColor="@color/colorDownloadText" android:ellipsize="end" android:id="@c0426id/history_item_text_main" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" android:singleLine="true" style="@style/DownloadListMainText"/>
+            <TextView android:textSize="12sp" android:textColor="@color/colorDownloadSubText" android:ellipsize="end" android:id="@c0426id/history_item_text_secondary" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="1dp" android:maxLines="1" android:singleLine="true"/>
+        </LinearLayout>
+        <FrameLayout android:layout_gravity="end" android:id="@c0426id/history_item_btn_more" android:background="@null" android:layout_width="48dp" android:layout_height="48dp">
+            <ImageView android:layout_gravity="center" android:layout_width="20dp" android:layout_height="20dp" android:src="@drawable/action_menu"/>
+        </FrameLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <group android:id="@c0499id/nav_group_main" android:checkableBehavior="all">
+        <item android:icon="@c0498drawable/ic_notification" android:id="@c0499id/nav_main" android:title="@string/drawer_main"/>
+        <item android:icon="@c0498drawable/ic_history" android:id="@c0499id/nav_history" android:title="@string/drawer_history"/>
+        <item android:icon="@c0498drawable/ic_tutorial" android:id="@c0499id/nav_tutorial" android:title="@string/drawer_tutorial"/>
+    </group>
+    <group android:id="@c0499id/nav_group_add" android:checkableBehavior="all">
+        <item android:icon="@c0498drawable/ic_settings" android:id="@c0499id/nav_settings" android:title="@string/drawer_settings"/>
+        <item android:icon="@c0498drawable/ic_help" android:id="@c0499id/nav_help" android:title="@string/drawer_help"/>
+        <item android:icon="@c0498drawable/ic_menu_info" android:id="@c0499id/nav_about" android:title="@string/drawer_about"/>
+    </group>
+</menu>

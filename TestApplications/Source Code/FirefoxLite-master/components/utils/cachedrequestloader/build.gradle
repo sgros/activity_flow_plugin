@@ -1,0 +1,23 @@
+apply from: '../../../buildSrc/android-library-base.gradle'
+apply from: "$rootProject.projectDir/buildSrc/pmd.gradle"
+apply from: "$rootProject.projectDir/buildSrc/checkstyle.gradle"
+apply from: "$rootProject.projectDir/buildSrc/findbugs.gradle"
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation project(':fileutils')
+    implementation project(':threadutils')
+    implementation project(':httptask')
+    implementation project(':HttpRequest')
+
+    implementation "com.android.support:appcompat-v7:${Versions.support}"
+    testImplementation "junit:junit:${Versions.junit}"
+    androidTestImplementation "com.android.support.test:runner:${Versions.test_runner}"
+    androidTestImplementation "com.android.support.test.espresso:espresso-core:${Versions.espresso}"
+    testImplementation "org.robolectric:robolectric:${Versions.robolectric}"
+    androidTestImplementation "com.squareup.okhttp3:mockwebserver:${Versions.mockwebserver}"
+}
+
+afterEvaluate {
+    check.dependsOn 'findbugs', 'pmd', 'checkstyle'
+}

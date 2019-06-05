@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<org.mozilla.rocket.nightmode.themed.ThemedImageButton xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@c0426id/btn_search" android:src="@drawable/action_search" android:tint="@color/browser_menu_button" style="@style/MainMenuButton"/>

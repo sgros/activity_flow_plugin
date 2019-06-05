@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <android.support.design.widget.AppBarLayout android:theme="@style/BookmarkActionBar" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <android.support.p004v7.widget.Toolbar android:id="@c0426id/toolbar" android:background="@color/bookmarkEditToolbarBackground" android:layout_width="match_parent" android:layout_height="?android:attr/actionBarSize" app:title="@string/title_activity_edit_bookmark"/>
+    </android.support.design.widget.AppBarLayout>
+    <include layout="@layout/content_edit_bookmark"/>
+</android.support.design.widget.CoordinatorLayout>

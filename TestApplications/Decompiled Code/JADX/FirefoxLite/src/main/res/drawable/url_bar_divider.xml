@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:drawable="@color/paletteDarkGreyC100" app:state_night="true"/>
+    <item android:drawable="@color/url_bar_divider_default"/>
+</selector>

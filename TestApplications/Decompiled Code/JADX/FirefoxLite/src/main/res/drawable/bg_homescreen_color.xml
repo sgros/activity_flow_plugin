@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item app:state_night="true">
+        <shape>
+            <gradient android:startColor="@color/themeGradientStartNight" android:endColor="@color/themeGradientEndNight" android:angle="45"/>
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <gradient android:startColor="?attr/themeGradientStart" android:endColor="?attr/themeGradientEnd" android:angle="135"/>
+        </shape>
+    </item>
+</selector>

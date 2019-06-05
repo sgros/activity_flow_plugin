@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/privateBackground" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@c0426id/browser_container" android:layout_width="match_parent" android:layout_height="match_parent">
+        <android.support.design.widget.AppBarLayout android:id="@c0426id/appbar" android:background="@android:color/transparent" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="wrap_content" app:elevation="0dp">
+            <FrameLayout android:id="@c0426id/urlbar" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="26dp" app:layout_scrollFlags="0">
+                <include layout="@layout/toolbar"/>
+                <View android:layout_gravity="bottom" android:background="@color/privateBackground" android:layout_width="match_parent" android:layout_height="1dp"/>
+                <org.mozilla.focus.widget.AnimatedProgressBar android:layout_gravity="bottom" android:id="@c0426id/progress" android:layout_width="match_parent" android:layout_height="3dp" android:layout_marginBottom="-1dp" android:progressDrawable="@drawable/photon_progressbar" android:importantForAccessibility="yes" app:shiftDuration="@integer/progress_shift_duration" app:wrapShiftDrawable="true" style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"/>
+            </FrameLayout>
+        </android.support.design.widget.AppBarLayout>
+        <org.mozilla.focus.widget.ResizableKeyboardLayout android:orientation="vertical" android:id="@c0426id/main_content" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="48dp">
+            <FrameLayout android:id="@c0426id/tab_view_slot" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        </org.mozilla.focus.widget.ResizableKeyboardLayout>
+    </LinearLayout>
+    <include layout="@layout/fragment_private_browser_item_menu_button"/>
+    <FrameLayout android:id="@c0426id/video_container" android:background="@android:color/black" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</FrameLayout>

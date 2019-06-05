@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/paletteWhite100" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+    <android.support.constraint.ConstraintLayout style="@style/NewEditTextBackgroundStyle">
+        <EditText android:id="@c0426id/bookmark_name" style="@style/NewEditTextInputStyle"/>
+        <TextView android:id="@c0426id/bookmark_name_label" android:text="@string/bookmark_edit_name" app:layout_constraintBottom_toTopOf="@c0426id/bookmark_name" app:layout_constraintLeft_toLeftOf="@c0426id/bookmark_name" app:layout_constraintTop_toTopOf="@c0426id/bookmark_name" style="@style/NewEditTextLabelStyle"/>
+        <ImageButton android:id="@c0426id/bookmark_name_clear" app:layout_constraintBottom_toBottomOf="@c0426id/bookmark_name" app:layout_constraintEnd_toEndOf="@c0426id/bookmark_name" app:layout_constraintTop_toTopOf="@c0426id/bookmark_name" style="@style/NewEditTextClearStyle"/>
+    </android.support.constraint.ConstraintLayout>
+    <android.support.constraint.ConstraintLayout style="@style/NewEditTextBackgroundStyle">
+        <EditText android:id="@c0426id/bookmark_location" android:inputType="textUri" style="@style/NewEditTextInputStyle"/>
+        <TextView android:id="@c0426id/bookmark_location_label" android:text="@string/bookmark_edit_location" app:layout_constraintBottom_toTopOf="@c0426id/bookmark_location" app:layout_constraintLeft_toLeftOf="@c0426id/bookmark_location" app:layout_constraintTop_toTopOf="@c0426id/bookmark_location" style="@style/NewEditTextLabelStyle"/>
+        <ImageButton android:id="@c0426id/bookmark_location_clear" app:layout_constraintBottom_toBottomOf="@c0426id/bookmark_location" app:layout_constraintEnd_toEndOf="@c0426id/bookmark_location" app:layout_constraintTop_toTopOf="@c0426id/bookmark_location" style="@style/NewEditTextClearStyle"/>
+    </android.support.constraint.ConstraintLayout>
+</LinearLayout>

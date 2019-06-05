@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@c0426id/screenshot_grid_btm_sheet_container" android:layout_width="match_parent" android:layout_height="match_parent">
+    <android.support.p004v7.widget.RecyclerView android:id="@c0426id/screenshot_grid_recycler_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:nestedScrollingEnabled="false"/>
+    <RelativeLayout style="@style/PanelEmptyHolderContainer">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <android.support.p004v7.widget.AppCompatImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/screenshots_empty" app:tint="@color/sharedColorAppPaletteGray3"/>
+            <TextView android:textSize="14sp" android:textColor="@color/colorDownloadSubText" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="@string/screenshot_grid_empty_text_title"/>
+            <TextView android:textSize="14sp" android:textColor="@color/colorDownloadSubText" android:gravity="center" android:id="@c0426id/screenshot_grid_empty_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="28dp"/>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

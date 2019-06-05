@@ -1,0 +1,23 @@
+include ':feature-tabs', ':fileutils', ':HttpRequest', ':httptask', ':logger', ':threadutils', ':newspoint', ':partnerrepository', ':strictmodeviolator', ':banner', 'urlutils', ':icon', ':cachedrequestloader', ':telemetry-annotation', ':telemetry-compiler', ':permissionhandler', ':bhaskar', ':newspoint', ':partnerrepository'
+project(':feature-tabs').projectDir = new File(rootDir, 'components/feature/tabs')
+project(':HttpRequest').projectDir = new File(rootDir, 'components/utils/HttpRequest')
+project(':httptask').projectDir = new File(rootDir, 'components/utils/httptask')
+project(':urlutils').projectDir = new File(rootDir, 'components/utils/urlutils')
+project(':fileutils').projectDir = new File(rootDir, 'components/utils/fileutils')
+project(':icon').projectDir = new File(rootDir, 'components/utils/icon')
+project(':logger').projectDir = new File(rootDir, 'components/utils/logger')
+project(':threadutils').projectDir = new File(rootDir, 'components/utils/threadutils')
+project(':cachedrequestloader').projectDir = new File(rootDir, 'components/utils/cachedrequestloader')
+project(':telemetry-annotation').projectDir = new File(rootDir, 'components/service/telemetry-annotation')
+project(':telemetry-compiler').projectDir = new File(rootDir, 'components/service/telemetry-compiler')
+project(':permissionhandler').projectDir = new File('components/utils/android-permission-handler/permissionhandler')
+project(':newspoint').projectDir = new File(rootDir, 'components/partners/newspoint')
+project(':partnerrepository').projectDir = new File(rootDir, 'components/partners/partnerrepository')
+project(':strictmodeviolator').projectDir = new File(rootDir, 'components/utils/strictmodeviolator')
+project(':banner').projectDir = new File(rootDir, 'components/ui/banner')
+
+include ':app', ':firebase'
+include ':third_party:subsampling-scale-image-view'
+include ':third_party:glide:library'
+include ':third_party:glide:annotation'
+include ':third_party:glide:disklrucache'

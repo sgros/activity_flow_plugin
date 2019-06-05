@@ -1,0 +1,121 @@
+// 
+// Decompiled by Procyon v0.5.34
+// 
+
+package android.support.transition;
+
+import android.graphics.Matrix;
+import android.util.Log;
+import android.support.v4.view.ViewCompat;
+import android.os.Build$VERSION;
+import java.lang.reflect.Field;
+import android.graphics.Rect;
+import android.view.View;
+import android.util.Property;
+
+class ViewUtils
+{
+    static final Property<View, Rect> CLIP_BOUNDS;
+    private static final ViewUtilsBase IMPL;
+    static final Property<View, Float> TRANSITION_ALPHA;
+    private static Field sViewFlagsField;
+    private static boolean sViewFlagsFieldFetched;
+    
+    static {
+        if (Build$VERSION.SDK_INT >= 22) {
+            IMPL = new ViewUtilsApi22();
+        }
+        else if (Build$VERSION.SDK_INT >= 21) {
+            IMPL = new ViewUtilsApi21();
+        }
+        else if (Build$VERSION.SDK_INT >= 19) {
+            IMPL = new ViewUtilsApi19();
+        }
+        else {
+            IMPL = new ViewUtilsBase();
+        }
+        TRANSITION_ALPHA = new Property<View, Float>(Float.class, "translationAlpha") {
+            public Float get(final View view) {
+                return ViewUtils.getTransitionAlpha(view);
+            }
+            
+            public void set(final View view, final Float n) {
+                ViewUtils.setTransitionAlpha(view, n);
+            }
+        };
+        CLIP_BOUNDS = new Property<View, Rect>(Rect.class, "clipBounds") {
+            public Rect get(final View view) {
+                return ViewCompat.getClipBounds(view);
+            }
+            
+            public void set(final View view, final Rect rect) {
+                ViewCompat.setClipBounds(view, rect);
+            }
+        };
+    }
+    
+    static void clearNonTransitionAlpha(final View view) {
+        ViewUtils.IMPL.clearNonTransitionAlpha(view);
+    }
+    
+    private static void fetchViewFlagsField() {
+        if (!ViewUtils.sViewFlagsFieldFetched) {
+            try {
+                (ViewUtils.sViewFlagsField = View.class.getDeclaredField("mViewFlags")).setAccessible(true);
+            }
+            catch (NoSuchFieldException ex) {
+                Log.i("ViewUtils", "fetchViewFlagsField: ");
+            }
+            ViewUtils.sViewFlagsFieldFetched = true;
+        }
+    }
+    
+    static ViewOverlayImpl getOverlay(final View view) {
+        if (Build$VERSION.SDK_INT >= 18) {
+            return new ViewOverlayApi18(view);
+        }
+        return ViewOverlayApi14.createFrom(view);
+    }
+    
+    static float getTransitionAlpha(final View view) {
+        return ViewUtils.IMPL.getTransitionAlpha(view);
+    }
+    
+    static WindowIdImpl getWindowId(final View view) {
+        if (Build$VERSION.SDK_INT >= 18) {
+            return new WindowIdApi18(view);
+        }
+        return new WindowIdApi14(view.getWindowToken());
+    }
+    
+    static void saveNonTransitionAlpha(final View view) {
+        ViewUtils.IMPL.saveNonTransitionAlpha(view);
+    }
+    
+    static void setLeftTopRightBottom(final View view, final int n, final int n2, final int n3, final int n4) {
+        ViewUtils.IMPL.setLeftTopRightBottom(view, n, n2, n3, n4);
+    }
+    
+    static void setTransitionAlpha(final View view, final float n) {
+        ViewUtils.IMPL.setTransitionAlpha(view, n);
+    }
+    
+    static void setTransitionVisibility(final View view, final int n) {
+        fetchViewFlagsField();
+        if (ViewUtils.sViewFlagsField == null) {
+            return;
+        }
+        try {
+            ViewUtils.sViewFlagsField.setInt(view, n | (ViewUtils.sViewFlagsField.getInt(view) & 0xFFFFFFF3));
+        }
+        catch (IllegalAccessException ex) {}
+    }
+    
+    static void transformMatrixToGlobal(final View view, final Matrix matrix) {
+        ViewUtils.IMPL.transformMatrixToGlobal(view, matrix);
+    }
+    
+    static void transformMatrixToLocal(final View view, final Matrix matrix) {
+        ViewUtils.IMPL.transformMatrixToLocal(view, matrix);
+    }
+}

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <View android:id="@c0426id/spotlight_mock_menu" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <ImageView android:id="@c0426id/spotlight_hand_pointer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="45dp" android:src="@drawable/pointing" android:scaleType="fitXY" android:layout_alignBottom="@c0426id/spotlight_mock_menu" android:layout_marginEnd="45dp" android:layout_alignEnd="@c0426id/spotlight_mock_menu"/>
+    <TextView android:textSize="18sp" android:textColor="@color/paletteWhite100" android:id="@c0426id/spotlight_message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="14dp" android:text="@string/night_mode_on_boarding_message" android:layout_above="@c0426id/spotlight_hand_pointer" android:layout_centerHorizontal="true" android:fontFamily="sans-serif-medium" android:layout_marginStart="54dp" android:layout_marginEnd="54dp"/>
+</RelativeLayout>
