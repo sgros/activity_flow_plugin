@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="mapgenerator_values">
+        <item>空</item>
+        <item>地図ファイル [*.map] (オフライン)</item>
+        <item>OSM Mapnik (オンライン)</item>
+        <item>OSM.de (オンライン)</item>
+        <item>OpenCycleMap (オンライン)</item>
+        <item>OpenTransportMap (オンライン)</item>
+        <item>OpenMapSurfer (オンライン)</item>
+        <item>MapQuest OSM (オンライン)</item>
+        <item>MapQuest Aerial (オンライン)</item>
+        <item>TF OpenCycleMap (オンライン)</item>
+        <item>TF Transport (オンライン)</item>
+        <item>TF Landscape (オンライン)</item>
+        <item>TF Outdoors (オンライン)</item>
+        <item>Esri World Street (オンライン)</item>
+        <item>Esri World Imagery (オンライン)</item>
+    </string-array>
+    <string-array name="preferences_scale_bar_unit_values">
+        <item>ヤード/ポンド法</item>
+        <item>メートル法</item>
+    </string-array>
+    <string-array name="preferences_text_scale_values">
+        <item>最小</item>
+        <item>小</item>
+        <item>通常</item>
+        <item>大</item>
+        <item>最大</item>
+    </string-array>
+</resources>

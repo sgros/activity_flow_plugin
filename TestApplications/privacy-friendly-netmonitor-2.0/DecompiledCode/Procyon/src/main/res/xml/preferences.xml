@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <SwitchPreference android:id="@id/pref_advanced_switch" android:title="@string/pref_advanced_switch" android:key="IS_DETAIL_MODE" android:summary="@string/pref_advanced_switch_summary" android:defaultValue="false" />
+    <SwitchPreference android:id="@id/pref_log_switch" android:title="@string/pref_log_switch" android:key="IS_LOG" android:summary="@string/pref_log_switch_summary" android:defaultValue="false" />
+    <SwitchPreference android:id="@id/pref_certval_switch" android:title="@string/pref_certval_switch" android:key="IS_CERTVAL" android:summary="@string/pref_certval_switch_summary" android:defaultValue="false" />
+    <SwitchPreference android:id="@id/pref_con_highlighting" android:title="@string/pref_connection_highlighting" android:key="IS_HIGHLIGHTED" android:summary="@string/pref_connection_highlighting_summary" android:defaultValue="true" />
+</PreferenceScreen>

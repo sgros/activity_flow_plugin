@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:whereyougo="http://whereyougo">
+    <PreferenceScreen android:title="" android:key="@string/pref_KEY_X_HIDDEN_PREFERENCES">
+        <EditTextPreference android:key="@string/pref_KEY_F_LAST_KNOWN_LOCATION_LATITUDE" android:defaultValue="@string/pref_DEFAULT_LAST_KNOWN_LOCATION_LATITUDE" />
+        <EditTextPreference android:key="@string/pref_KEY_F_LAST_KNOWN_LOCATION_LONGITUDE" android:defaultValue="@string/pref_DEFAULT_LAST_KNOWN_LOCATION_LONGITUDE" />
+        <EditTextPreference android:key="@string/pref_KEY_F_LAST_KNOWN_LOCATION_ALTITUDE" android:defaultValue="@string/pref_DEFAULT_LAST_KNOWN_LOCATION_ALTITUDE" />
+        <EditTextPreference android:key="@string/pref_KEY_S_APPLICATION_VERSION_LAST" android:defaultValue="0" />
+        <EditTextPreference android:key="@string/pref_KEY_S_GPS_MIN_TIME_NOTIFICATION" android:defaultValue="@string/pref_DEFAULT_GPS_MIN_TIME_NOTIFICATION" />
+        <CheckBoxPreference android:title="@string/pref_gps" android:key="@string/pref_KEY_B_GPS" android:summary="@string/pref_gps_desc" android:defaultValue="@string/pref_DEFAULT_GPS_START_AUTOMATICALLY" />
+    </PreferenceScreen>
+    <PreferenceScreen android:icon="@drawable/ic_action_settings" android:persistent="false" android:title="@string/pref_global" android:key="">
+        <PreferenceCategory android:persistent="false" android:title="@string/pref_global" android:key="">
+            <menion.android.whereyougo.preferences.PreviewPreference android:title="@string/pref_root" android:key="@string/pref_KEY_S_ROOT" android:summary="@string/pref_root_desc" android:defaultValue="@string/pref_DEFAULT_ROOT" />
+            <menion.android.whereyougo.preferences.PreviewListPreference android:entries="@array/pref_map_provider_entries" android:title="@string/pref_map_provider" android:key="@string/pref_KEY_S_MAP_PROVIDER" android:summary="@string/pref_map_provider_desc" android:defaultValue="@string/pref_DEFAULT_MAP_PROVIDER" android:entryValues="@array/pref_map_provider_entry_values" whereyougo:previewTemplate="(%1$)" />
+            <CheckBoxPreference android:title="@string/pref_save_game_auto" android:key="@string/pref_KEY_B_SAVEGAME_AUTO" android:summary="@string/pref_save_game_auto_desc" android:defaultValue="@string/pref_DEFAULT_SAVEGAME_AUTO" />
+            <menion.android.whereyougo.preferences.PreviewEditTextPreference android:title="@string/pref_save_game_slots" android:key="@string/pref_KEY_S_SAVEGAME_SLOTS" android:summary="@string/pref_save_game_slots_desc" android:defaultValue="@string/pref_DEFAULT_SAVEGAME_SLOTS" android:inputType="number" whereyougo:previewTemplate="(%1$)" />
+            <CheckBoxPreference android:title="@string/pref_double_click" android:key="@string/pref_KEY_B_DOUBLE_CLICK" android:summary="@string/pref_double_click_desc" android:defaultValue="@string/pref_DEFAULT_DOUBLE_CLICK" />
+        </PreferenceCategory>
+    </PreferenceScreen>
+    <PreferenceScreen android:icon="@drawable/ic_action_accounts" android:persistent="false" android:title="@string/pref_login" android:key="@string/pref_KEY_X_LOGIN_PREFERENCES">
+        <PreferenceCategory android:persistent="false" android:title="@string/pref_login" android:key="">
+            <Preference android:icon="@android:drawable/ic_dialog_info" android:persistent="false" android:selectable="false" android:summary="@string/pref_login_desc" />
+            <menion.android.whereyougo.preferences.PreviewEditTextPreference android:title="@string/pref_gc_username" android:key="@string/pref_KEY_S_GC_USERNAME" android:summary="@string/pref_gc_username_desc" android:defaultValue="@string/pref_DEFAULT_GC_USERNAME" android:inputType="textPersonName" whereyougo:previewTemplate="(%1$) " />
+            <menion.android.whereyougo.preferences.PreviewEditPasswordPreference android:title="@string/pref_gc_password" android:key="@string/pref_KEY_S_GC_PASSWORD" android:summary="@string/pref_gc_password_desc" android:defaultValue="@string/pref_DEFAULT_GC_PASSWORD" android:inputType="textPassword" whereyougo:previewTemplate="(%1$) " />
+        </PreferenceCategory>
+    </PreferenceScreen>
+    <PreferenceScreen android:icon="@drawable/ic_action_location_found" android:persistent="false" android:title="@string/gps_and_location" android:key="">
+        <PreferenceCategory android:persistent="false" android:title="@string/pref_global" android:key="">
+            <CheckBoxPreference android:title="@string/pref_gps" android:key="@string/pref_KEY_B_GPS_START_AUTOMATICALLY" android:summary="@string/pref_gps_desc" android:defaultValue="@string/pref_DEFAULT_GPS_START_AUTOMATICALLY" />
+            <menion.android.whereyougo.preferences.PreviewEditTextPreference android:title="@string/pref_gps_altitude_manual_correction" android:key="@string/pref_KEY_S_GPS_ALTITUDE_MANUAL_CORRECTION" android:summary="@string/pref_gps_altitude_manual_correction_desc" android:defaultValue="@string/pref_DEFAULT_GPS_ALTITUDE_MANUAL_CORRECTION" android:inputType="numberDecimal" whereyougo:previewTemplate="(%1$ m)" />
+            <CheckBoxPreference android:title="@string/pref_gps_beep_on_gps_fix" android:key="@string/pref_KEY_B_GPS_BEEP_ON_GPS_FIX" android:summary="@string/pref_gps_beep_on_gps_fix_desc" android:defaultValue="@string/pref_DEFAULT_GPS_BEEP_ON_GPS_FIX" />
+        </PreferenceCategory>
+        <PreferenceCategory android:persistent="false" android:title="@string/disable_location" android:key="">
+            <CheckBoxPreference android:title="@string/pref_gps_disable" android:key="@string/pref_KEY_B_GPS_DISABLE_WHEN_HIDE" android:summary="@string/pref_gps_disable_desc" android:defaultValue="@string/pref_DEFAULT_GPS_DISABLE_WHEN_HIDE" />
+            <CheckBoxPreference android:title="@string/pref_guiding" android:key="@string/pref_KEY_B_GUIDING_GPS_REQUIRED" android:summary="@string/pref_guiding_gps_required_desc" android:dependency="@string/pref_KEY_B_GPS_DISABLE_WHEN_HIDE" android:defaultValue="@string/pref_DEFAULT_GUIDING_GPS_REQUIRED" />
+        </PreferenceCategory>
+    </PreferenceScreen>
+    <PreferenceScreen android:icon="@android:drawable/ic_menu_compass" android:persistent="false" android:title="@string/pref_sensors" android:key="">
+        <PreferenceCategory android:persistent="false" android:title="@string/pref_orientation" android:key="">
+            <CheckBoxPreference android:title="@string/pref_sensors_compass_hardware" android:key="@string/pref_KEY_B_SENSOR_HARDWARE_COMPASS" android:summary="@string/pref_sensors_compass_hardware_desc" android:defaultValue="@string/pref_DEFAULT_SENSOR_HARDWARE_COMPASS" />
+            <CheckBoxPreference android:title="@string/pref_sensors_compass_auto_change" android:key="@string/pref_KEY_B_HARDWARE_COMPASS_AUTO_CHANGE" android:summary="@string/pref_sensors_compass_auto_change_desc" android:defaultValue="@string/pref_DEFAULT_HARDWARE_COMPASS_AUTO_CHANGE" />
+            <menion.android.whereyougo.preferences.PreviewEditTextPreference android:title="@string/pref_sensors_compass_auto_change_value" android:key="@string/pref_KEY_S_HARDWARE_COMPASS_AUTO_CHANGE_VALUE" android:summary="@string/pref_sensors_compass_auto_change_value_desc" android:dependency="@string/pref_KEY_B_HARDWARE_COMPASS_AUTO_CHANGE" android:defaultValue="@string/pref_DEFAULT_HARDWARE_COMPASS_AUTO_CHANGE_VALUE" android:inputType="number" whereyougo:previewTemplate="(%1$ m/s)" />
+            <CheckBoxPreference android:title="@string/pref_bearing_true" android:key="@string/pref_KEY_B_SENSORS_BEARING_TRUE" android:summary="@string/pref_bearing_true_desc" android:defaultValue="@string/pref_DEFAULT_SENSORS_BEARING_TRUE" />
+            <menion.android.whereyougo.preferences.PreviewListPreference android:entries="@array/pref_sensors_orient_filter_entries" android:title="@string/pref_sensors_orient_filter" android:key="@string/pref_KEY_S_SENSORS_ORIENT_FILTER" android:summary="@string/pref_sensors_orient_filter_desc" android:defaultValue="@string/pref_DEFAULT_SENSORS_ORIENT_FILTER" android:entryValues="@array/pref_sensors_orient_filter_entry_values" />
+        </PreferenceCategory>
+    </PreferenceScreen>
+    <PreferenceScreen android:icon="@drawable/ic_action_directions" android:persistent="false" android:title="@string/pref_guiding" android:key="">
+        <PreferenceCategory android:persistent="false" android:title="@string/pref_guiding_compass_sounds" android:key="">
+            <CheckBoxPreference android:title="@string/pref_guiding_compass_sounds" android:key="@string/pref_KEY_B_GUIDING_COMPASS_SOUNDS" android:summary="@string/pref_guiding_compass_sounds_desc" android:defaultValue="@string/pref_DEFAULT_GUIDING_COMPASS_SOUNDS" />
+            <menion.android.whereyougo.preferences.PreviewListPreference android:entries="@array/pref_guiding_waypoint_sound_entries" android:title="@string/pref_guiding_sound_type" android:key="@string/pref_KEY_S_GUIDING_WAYPOINT_SOUND" android:summary="@string/pref_guiding_sound_type_waypoint_desc" android:dependency="@string/pref_KEY_B_GUIDING_COMPASS_SOUNDS" android:defaultValue="@string/pref_DEFAULT_GUIDING_WAYPOINT_SOUND" android:entryValues="@array/pref_guiding_waypoint_sound_entry_values" />
+            <menion.android.whereyougo.preferences.PreviewEditTextPreference android:title="@string/pref_guiding_sound_distance" android:key="@string/pref_KEY_S_GUIDING_WAYPOINT_SOUND_DISTANCE" android:summary="@string/pref_guiding_sound_distance_waypoint_desc" android:dependency="@string/pref_KEY_B_GUIDING_COMPASS_SOUNDS" android:defaultValue="@string/pref_DEFAULT_GUIDING_WAYPOINT_SOUND_DISTANCE" android:inputType="number" whereyougo:previewTemplate="(%1$ m)" />
+        </PreferenceCategory>
+        <PreferenceCategory android:persistent="false" android:title="@string/waypoints" android:key="">
+            <menion.android.whereyougo.preferences.PreviewListPreference android:entries="@array/pref_guiding_zone_point_entries" android:title="@string/pref_guiding_zone_point" android:key="@string/pref_KEY_S_GUIDING_ZONE_POINT" android:summary="@string/pref_guiding_zone_point_desc" android:defaultValue="@string/pref_DEFAULT_GUIDING_ZONE_POINT" android:entryValues="@array/pref_guiding_zone_point_entry_values" />
+        </PreferenceCategory>
+    </PreferenceScreen>
+    <PreferenceScreen android:icon="@drawable/ic_action_picture" android:persistent="false" android:title="@string/pref_appearance" android:key="">
+        <PreferenceCategory android:persistent="false" android:title="@string/pref_global" android:key="">
+            <CheckBoxPreference android:title="@string/pref_statusbar" android:key="@string/pref_KEY_B_STATUSBAR" android:summary="@string/pref_statusbar_desc" android:defaultValue="@string/pref_DEFAULT_STATUSBAR" />
+            <CheckBoxPreference android:title="@string/pref_fullscreen" android:key="@string/pref_KEY_B_FULLSCREEN" android:summary="@string/pref_fullscreen_desc" android:defaultValue="@string/pref_DEFAULT_FULLSCREEN" />
+            <menion.android.whereyougo.preferences.PreviewListPreference android:entries="@array/pref_highlight_entries" android:title="@string/pref_highlight" android:key="@string/pref_KEY_S_HIGHLIGHT" android:summary="@string/pref_highlight_desc" android:defaultValue="@string/pref_DEFAULT_HIGHLIGHT" android:entryValues="@array/pref_highlight_entry_values" />
+            <menion.android.whereyougo.preferences.PreviewListPreference android:entries="@array/pref_font_size_entries" android:title="@string/pref_font_size" android:key="@string/pref_KEY_S_FONT_SIZE" android:summary="@string/pref_font_size_desc" android:defaultValue="@string/pref_DEFAULT_FONT_SIZE" android:entryValues="@array/pref_font_size_entry_values" />
+            <CheckBoxPreference android:title="@string/pref_image_stretch" android:key="@string/pref_KEY_B_IMAGE_STRETCH" android:summary="@string/pref_image_stretch_desc" android:defaultValue="@string/pref_DEFAULT_IMAGE_STRETCH" />
+        </PreferenceCategory>
+    </PreferenceScreen>
+    <PreferenceScreen android:icon="@drawable/ic_action_web_site" android:persistent="false" android:title="@string/pref_locale" android:key="">
+        <PreferenceCategory android:persistent="false" android:title="@string/pref_language" android:key="">
+            <menion.android.whereyougo.preferences.PreviewListPreference android:entries="@array/pref_language_entries" android:title="@string/pref_language" android:key="@string/pref_KEY_S_LANGUAGE" android:summary="@string/pref_language_desc" android:defaultValue="@string/pref_DEFAULT_LANGUAGE" android:entryValues="@array/pref_language_entry_values" />
+        </PreferenceCategory>
+        <PreferenceCategory android:persistent="false" android:title="@string/pref_units_coo_latlon" android:key="">
+            <menion.android.whereyougo.preferences.PreviewListPreference android:entries="@array/pref_units_coo_latlon_entries" android:title="@string/pref_units_coo_latlon" android:key="@string/pref_KEY_S_UNITS_COO_LATLON" android:summary="@string/pref_units_coo_latlon_desc" android:defaultValue="@string/pref_DEFAULT_UNITS_COO_LATLON" android:entryValues="@array/pref_units_coo_latlon_entry_values" />
+        </PreferenceCategory>
+        <PreferenceCategory android:persistent="false" android:title="@string/pref_units" android:key="">
+            <menion.android.whereyougo.preferences.PreviewListPreference android:entries="@array/pref_units_length_entries" android:title="@string/pref_units_length" android:key="@string/pref_KEY_S_UNITS_LENGTH" android:summary="@string/pref_units_length_desc" android:defaultValue="@string/pref_DEFAULT_UNITS_LENGTH" android:entryValues="@array/pref_units_length_entry_values" />
+            <menion.android.whereyougo.preferences.PreviewListPreference android:entries="@array/pref_units_altitude_entries" android:title="@string/pref_units_altitude" android:key="@string/pref_KEY_S_UNITS_ALTITUDE" android:summary="@string/pref_units_altitude_desc" android:defaultValue="@string/pref_DEFAULT_UNITS_ALTITUDE" android:entryValues="@array/pref_units_altitude_entry_values" />
+            <menion.android.whereyougo.preferences.PreviewListPreference android:entries="@array/pref_units_speed_entries" android:title="@string/pref_units_speed" android:key="@string/pref_KEY_S_UNITS_SPEED" android:summary="@string/pref_units_speed_desc" android:defaultValue="@string/pref_DEFAULT_UNITS_SPEED" android:entryValues="@array/pref_units_speed_entry_values" />
+            <menion.android.whereyougo.preferences.PreviewListPreference android:entries="@array/pref_units_angle_entries" android:title="@string/pref_units_angle" android:key="@string/pref_KEY_S_UNITS_ANGLE" android:summary="@string/pref_units_angle_desc" android:defaultValue="@string/pref_DEFAULT_UNITS_ANGLE" android:entryValues="@array/pref_units_angle_entry_values" />
+        </PreferenceCategory>
+    </PreferenceScreen>
+</PreferenceScreen>

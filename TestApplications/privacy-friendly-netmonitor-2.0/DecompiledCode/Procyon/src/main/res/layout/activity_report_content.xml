@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/report_content_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior" style="@style/AlertDialog.AppCompat"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:layout_gravity="center" android:id="@id/report_empty_icon" android:layout_width="96.0dip" android:layout_height="wrap_content" android:src="@mipmap/ic_drawer" android:adjustViewBounds="true" android:cropToPadding="true" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+    <TextView android:id="@id/report_empty_text" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginTop="@dimen/activity_vertical_margin" android:text="@string/report_swipe_refresh" android:layout_below="@id/report_empty_icon" android:layout_centerHorizontal="true" />
+    <android.support.v4.widget.SwipeRefreshLayout android:id="@id/swipe_refresh_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <ExpandableListView android:id="@id/list" android:paddingBottom="28.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indicatorLeft="?android:expandableListPreferredItemIndicatorLeft" android:divider="@android:color/darker_gray" android:dividerHeight="0.5dip" />
+    </android.support.v4.widget.SwipeRefreshLayout>
+    <android.support.design.widget.FloatingActionButton android:id="@id/reportFAB" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="16.0dip" android:src="@drawable/ic_stop" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+</RelativeLayout>

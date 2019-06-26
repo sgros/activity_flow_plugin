@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/graph"
+	app:startDestination="@id/menion.android.whereyougo.gui.activity.MainActivity">
+	<fragment
+		android:id="@+id/menion_android_whereyougo_gui_activity_MainActivity"
+		android:name="menion.android.whereyougo.gui.activity.MainActivity"
+		android:label="menion_android_whereyougo_gui_activity_MainActivity"
+		tools:layout="@layout/menion_android_whereyougo_gui_activity_MainActivity" >
+		<action
+			android:id="@+id/action_menion_android_whereyougo_gui_activity_MainActivity_to_menion_android_whereyougo_gui_activity_SatelliteActivity"
+			app:destination="@id/menion_android_whereyougo_gui_activity_SatelliteActivity" />
+		<action
+			android:id="@+id/action_menion_android_whereyougo_gui_activity_MainActivity_to_menion_android_whereyougo_gui_activity_XmlSettingsActivity"
+			app:destination="@id/menion_android_whereyougo_gui_activity_XmlSettingsActivity" />
+		<action
+			android:id="@+id/action_menion_android_whereyougo_gui_activity_MainActivity_to_menion_android_whereyougo_gui_activity_GuidingActivity"
+			app:destination="@id/menion_android_whereyougo_gui_activity_GuidingActivity" />
+		<action
+			android:id="@+id/action_menion_android_whereyougo_gui_activity_MainActivity_to_menion_android_whereyougo_network_activity_DownloadCartridgeActivity"
+			app:destination="@id/menion_android_whereyougo_network_activity_DownloadCartridgeActivity" />
+	</fragment>
+	<fragment
+		android:id="@+id/menion_android_whereyougo_maps_mapsforge_MapsforgeActivity"
+		android:name="menion.android.whereyougo.maps.mapsforge.MapsforgeActivity"
+		android:label="menion_android_whereyougo_maps_mapsforge_MapsforgeActivity"
+		tools:layout="@layout/menion_android_whereyougo_maps_mapsforge_MapsforgeActivity" >
+		<action
+			android:id="@+id/action_menion_android_whereyougo_maps_mapsforge_MapsforgeActivity_to_menion_android_whereyougo_gui_activity_MainActivity"
+			app:destination="@id/menion_android_whereyougo_gui_activity_MainActivity" />
+		<action
+			android:id="@+id/action_menion_android_whereyougo_maps_mapsforge_MapsforgeActivity_to_menion_android_whereyougo_maps_mapsforge_InfoView"
+			app:destination="@id/menion_android_whereyougo_maps_mapsforge_InfoView" />
+		<action
+			android:id="@+id/action_menion_android_whereyougo_maps_mapsforge_MapsforgeActivity_to_menion_android_whereyougo_maps_mapsforge_preferences_EditPreferences"
+			app:destination="@id/menion_android_whereyougo_maps_mapsforge_preferences_EditPreferences" />
+		<action
+			android:id="@+id/action_menion_android_whereyougo_maps_mapsforge_MapsforgeActivity_to_menion_android_whereyougo_maps_mapsforge_filepicker_FilePicker"
+			app:destination="@id/menion_android_whereyougo_maps_mapsforge_filepicker_FilePicker" />
+	</fragment>
+	<fragment
+		android:id="@+id/menion_android_whereyougo_maps_mapsforge_preferences_EditPreferences"
+		android:name="menion.android.whereyougo.maps.mapsforge.preferences.EditPreferences"
+		android:label="menion_android_whereyougo_maps_mapsforge_preferences_EditPreferences"
+		tools:layout="@layout/menion_android_whereyougo_maps_mapsforge_preferences_EditPreferences" >
+	</fragment>
+	<fragment
+		android:id="@+id/menion_android_whereyougo_maps_mapsforge_filepicker_FilePicker"
+		android:name="menion.android.whereyougo.maps.mapsforge.filepicker.FilePicker"
+		android:label="menion_android_whereyougo_maps_mapsforge_filepicker_FilePicker"
+		tools:layout="@layout/menion_android_whereyougo_maps_mapsforge_filepicker_FilePicker" >
+	</fragment>
+	<fragment
+		android:id="@+id/ar_com_daidalos_afiledialog_FileChooserActivity"
+		android:name="ar.com.daidalos.afiledialog.FileChooserActivity"
+		android:label="ar_com_daidalos_afiledialog_FileChooserActivity"
+		tools:layout="@layout/ar_com_daidalos_afiledialog_FileChooserActivity" >
+	</fragment>
+	<fragment
+		android:id="@+id/menion_android_whereyougo_maps_mapsforge_InfoView"
+		android:name="menion.android.whereyougo.maps.mapsforge.InfoView"
+		android:label="menion_android_whereyougo_maps_mapsforge_InfoView"
+		tools:layout="@layout/menion_android_whereyougo_maps_mapsforge_InfoView" >
+	</fragment>
+	<fragment
+		android:id="@+id/menion_android_whereyougo_gui_activity_CartridgeDetailsActivity"
+		android:name="menion.android.whereyougo.gui.activity.CartridgeDetailsActivity"
+		android:label="menion_android_whereyougo_gui_activity_CartridgeDetailsActivity"
+		tools:layout="@layout/menion_android_whereyougo_gui_activity_CartridgeDetailsActivity" >
+	</fragment>
+	<fragment
+		android:id="@+id/menion_android_whereyougo_gui_activity_wherigo_MainMenuActivity"
+		android:name="menion.android.whereyougo.gui.activity.wherigo.MainMenuActivity"
+		android:label="menion_android_whereyougo_gui_activity_wherigo_MainMenuActivity"
+		tools:layout="@layout/menion_android_whereyougo_gui_activity_wherigo_MainMenuActivity" >
+		<action
+			android:id="@+id/action_menion_android_whereyougo_gui_activity_wherigo_MainMenuActivity_to_menion_android_whereyougo_gui_activity_SatelliteActivity"
+			app:destination="@id/menion_android_whereyougo_gui_activity_SatelliteActivity" />
+	</fragment>
+	<fragment
+		android:id="@+id/menion_android_whereyougo_gui_activity_wherigo_DetailsActivity"
+		android:name="menion.android.whereyougo.gui.activity.wherigo.DetailsActivity"
+		android:label="menion_android_whereyougo_gui_activity_wherigo_DetailsActivity"
+		tools:layout="@layout/menion_android_whereyougo_gui_activity_wherigo_DetailsActivity" >
+	</fragment>
+	<fragment
+		android:id="@+id/menion_android_whereyougo_gui_activity_wherigo_InputScreenActivity"
+		android:name="menion.android.whereyougo.gui.activity.wherigo.InputScreenActivity"
+		android:label="menion_android_whereyougo_gui_activity_wherigo_InputScreenActivity"
+		tools:layout="@layout/menion_android_whereyougo_gui_activity_wherigo_InputScreenActivity" >
+	</fragment>
+	<fragment
+		android:id="@+id/menion_android_whereyougo_gui_activity_wherigo_ListActionsActivity"
+		android:name="menion.android.whereyougo.gui.activity.wherigo.ListActionsActivity"
+		android:label="menion_android_whereyougo_gui_activity_wherigo_ListActionsActivity"
+		tools:layout="@layout/menion_android_whereyougo_gui_activity_wherigo_ListActionsActivity" >
+	</fragment>
+	<fragment
+		android:id="@+id/menion_android_whereyougo_gui_activity_wherigo_ListTargetsActivity"
+		android:name="menion.android.whereyougo.gui.activity.wherigo.ListTargetsActivity"
+		android:label="menion_android_whereyougo_gui_activity_wherigo_ListTargetsActivity"
+		tools:layout="@layout/menion_android_whereyougo_gui_activity_wherigo_ListTargetsActivity" >
+	</fragment>
+	<fragment
+		android:id="@+id/menion_android_whereyougo_gui_activity_wherigo_ListTasksActivity"
+		android:name="menion.android.whereyougo.gui.activity.wherigo.ListTasksActivity"
+		android:label="menion_android_whereyougo_gui_activity_wherigo_ListTasksActivity"
+		tools:layout="@layout/menion_android_whereyougo_gui_activity_wherigo_ListTasksActivity" >
+	</fragment>
+	<fragment
+		android:id="@+id/menion_android_whereyougo_gui_activity_wherigo_ListThingsActivity"
+		android:name="menion.android.whereyougo.gui.activity.wherigo.ListThingsActivity"
+		android:label="menion_android_whereyougo_gui_activity_wherigo_ListThingsActivity"
+		tools:layout="@layout/menion_android_whereyougo_gui_activity_wherigo_ListThingsActivity" >
+	</fragment>
+	<fragment
+		android:id="@+id/menion_android_whereyougo_gui_activity_wherigo_ListZonesActivity"
+		android:name="menion.android.whereyougo.gui.activity.wherigo.ListZonesActivity"
+		android:label="menion_android_whereyougo_gui_activity_wherigo_ListZonesActivity"
+		tools:layout="@layout/menion_android_whereyougo_gui_activity_wherigo_ListZonesActivity" >
+	</fragment>
+	<fragment
+		android:id="@+id/menion_android_whereyougo_gui_activity_wherigo_PushDialogActivity"
+		android:name="menion.android.whereyougo.gui.activity.wherigo.PushDialogActivity"
+		android:label="menion_android_whereyougo_gui_activity_wherigo_PushDialogActivity"
+		tools:layout="@layout/menion_android_whereyougo_gui_activity_wherigo_PushDialogActivity" >
+	</fragment>
+	<fragment
+		android:id="@+id/menion_android_whereyougo_gui_activity_GuidingActivity"
+		android:name="menion.android.whereyougo.gui.activity.GuidingActivity"
+		android:label="menion_android_whereyougo_gui_activity_GuidingActivity"
+		tools:layout="@layout/menion_android_whereyougo_gui_activity_GuidingActivity" >
+	</fragment>
+	<fragment
+		android:id="@+id/menion_android_whereyougo_gui_activity_SatelliteActivity"
+		android:name="menion.android.whereyougo.gui.activity.SatelliteActivity"
+		android:label="menion_android_whereyougo_gui_activity_SatelliteActivity"
+		tools:layout="@layout/menion_android_whereyougo_gui_activity_SatelliteActivity" >
+	</fragment>
+	<fragment
+		android:id="@+id/menion_android_whereyougo_gui_activity_XmlSettingsActivity"
+		android:name="menion.android.whereyougo.gui.activity.XmlSettingsActivity"
+		android:label="menion_android_whereyougo_gui_activity_XmlSettingsActivity"
+		tools:layout="@layout/menion_android_whereyougo_gui_activity_XmlSettingsActivity" >
+	</fragment>
+	<fragment
+		android:id="@+id/menion_android_whereyougo_network_activity_DownloadCartridgeActivity"
+		android:name="menion.android.whereyougo.network.activity.DownloadCartridgeActivity"
+		android:label="menion_android_whereyougo_network_activity_DownloadCartridgeActivity"
+		tools:layout="@layout/menion_android_whereyougo_network_activity_DownloadCartridgeActivity" >
+		<action
+			android:id="@+id/action_menion_android_whereyougo_network_activity_DownloadCartridgeActivity_to_menion_android_whereyougo_gui_activity_MainActivity"
+			app:destination="@id/menion_android_whereyougo_gui_activity_MainActivity" />
+		<action
+			android:id="@+id/action_menion_android_whereyougo_network_activity_DownloadCartridgeActivity_to_menion_android_whereyougo_gui_activity_XmlSettingsActivity"
+			app:destination="@id/menion_android_whereyougo_gui_activity_XmlSettingsActivity" />
+	</fragment>
+	<fragment
+		android:id="@+id/com_journeyapps_barcodescanner_CaptureActivity"
+		android:name="com.journeyapps.barcodescanner.CaptureActivity"
+		android:label="com_journeyapps_barcodescanner_CaptureActivity"
+		tools:layout="@layout/com_journeyapps_barcodescanner_CaptureActivity" >
+	</fragment>
+</navigation>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout style="@style/PanelTopMain">
+        <ImageButton android:id="@id/button_logo" android:src="@drawable/ic_title_logo" style="@style/PanelButton" />
+        <ImageView style="@style/SeparatorVertical" />
+        <TextView style="@style/TitleText" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:background="@android:color/white" android:padding="6.0dip" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <LinearLayout style="@style/MainScreenLine">
+            <Button android:id="@id/button_start" android:text="@string/start" android:drawableTop="@drawable/ic_main_start" style="@style/MainScreenButton" />
+            <Button android:id="@id/button_map" android:text="@string/map" android:drawableTop="@drawable/ic_main_map" style="@style/MainScreenButton" />
+        </LinearLayout>
+        <LinearLayout style="@style/MainScreenLine">
+            <Button android:id="@id/button_gps" android:text="@string/gps" android:drawableTop="@drawable/ic_main_gps" style="@style/MainScreenButton" />
+            <Button android:id="@id/button_settings" android:text="@string/settings" android:drawableTop="@drawable/ic_main_settings" style="@style/MainScreenButton" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

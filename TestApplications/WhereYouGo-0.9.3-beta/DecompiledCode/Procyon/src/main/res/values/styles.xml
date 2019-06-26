@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme" parent="@android:style/Theme.Light.NoTitleBar">
+        <item name="android:windowAnimationStyle">@null</item>
+    </style>
+    <style name="Mapsforge" parent="@android:style/Theme.NoTitleBar" />
+    <style name="ThemeSettings" parent="@android:style/Theme" />
+    <style name="zxing_CaptureTheme" parent="@android:style/Theme.Black.NoTitleBar.Fullscreen" />
+    <style name="CustomScreenBottomInfo">
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_width">0.0dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+    <style name="CustomScreenTextTitle" parent="@android:style/Widget.TextView">
+        <item name="android:textSize">12.0sp</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingRight">10.0dip</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+    <style name="CustomScreenTextTitleDark" parent="@style/CustomScreenTextTitle">
+        <item name="android:textColor">#ff000000</item>
+    </style>
+    <style name="CustomScreenTextValue" parent="@android:style/Widget.TextView">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingRight">2.0dip</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:text">0</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+    <style name="CustomScreenTextValueDark" parent="@style/CustomScreenTextValue">
+        <item name="android:textColor">#ff000000</item>
+    </style>
+    <style name="FontSizeLarge">
+        <item name="android:textSize">20.0sp</item>
+    </style>
+    <style name="FontSizeMedium">
+        <item name="android:textSize">16.0sp</item>
+    </style>
+    <style name="FontSizeSmall">
+        <item name="android:textSize">12.0sp</item>
+    </style>
+    <style name="MainScreenButton">
+        <item name="android:textSize">@dimen/text_size_medium</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:background">@drawable/selector_button</item>
+        <item name="android:paddingLeft">10.0dip</item>
+        <item name="android:paddingTop">15.0dip</item>
+        <item name="android:paddingRight">10.0dip</item>
+        <item name="android:paddingBottom">15.0dip</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+    <style name="MainScreenLine">
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+    <style name="Panel">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">@dimen/title_height</item>
+    </style>
+    <style name="PanelBottomAboveShadow">
+        <item name="android:background">@drawable/var_bottom_shadow</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">@dimen/shadow_height</item>
+    </style>
+    <style name="PanelBottomMain" parent="@style/Panel">
+        <item name="android:id">@id/panel_bottom_main</item>
+        <item name="android:background">@color/title_background</item>
+        <item name="android:layout_alignParentBottom">true</item>
+    </style>
+    <style name="PanelButton">
+        <item name="android:background">@drawable/selector_button</item>
+        <item name="android:layout_width">@dimen/title_height</item>
+        <item name="android:layout_height">@dimen/title_height</item>
+    </style>
+    <style name="PanelButton.Width" parent="@style/PanelButton">
+        <item name="android:layout_width">0.0dip</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+    <style name="PanelToggleButton">
+        <item name="android:background">@drawable/selector_toggle_button_v1</item>
+        <item name="android:padding">@dimen/title_height_quarter</item>
+        <item name="android:layout_width">@dimen/title_height</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:textOn"></item>
+        <item name="android:textOff"></item>
+    </style>
+    <style name="PanelTopBelowShadow">
+        <item name="android:background">@drawable/var_top_shadow</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">@dimen/shadow_height</item>
+    </style>
+    <style name="PanelTopMain" parent="@style/Panel">
+        <item name="android:id">@id/panel_top_main</item>
+        <item name="android:background">@color/title_background</item>
+    </style>
+    <style name="SeparatorHorizontal">
+        <item name="android:background">@color/title_separator</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">1.0px</item>
+    </style>
+    <style name="SeparatorHorizontal.Dark" parent="@style/SeparatorHorizontal">
+        <item name="android:background">@color/title_separator_dark</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">1.0px</item>
+    </style>
+    <style name="SeparatorVertical">
+        <item name="android:background">@color/title_separator</item>
+        <item name="android:layout_width">1.0px</item>
+        <item name="android:layout_height">fill_parent</item>
+    </style>
+    <style name="SeparatorVertical.Dark" parent="@style/SeparatorVertical">
+        <item name="android:background">@color/title_separator_dark</item>
+        <item name="android:layout_width">1.0px</item>
+        <item name="android:layout_height">fill_parent</item>
+    </style>
+    <style name="TextStyle" parent="@android:style/TextAppearance">
+        <item name="android:textStyle">normal</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+    <style name="TextStyle12" parent="@style/TextStyle">
+        <item name="android:textSize">12.0sp</item>
+    </style>
+    <style name="TextStyle14" parent="@style/TextStyle">
+        <item name="android:textSize">14.0sp</item>
+    </style>
+    <style name="TextStyle14B" parent="@style/TextStyleB">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="TextStyle16" parent="@style/TextStyle">
+        <item name="android:textSize">16.0sp</item>
+    </style>
+    <style name="TextStyle16B" parent="@style/TextStyleB">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="TextStyle18" parent="@style/TextStyle">
+        <item name="android:textSize">18.0sp</item>
+    </style>
+    <style name="TextStyle18B" parent="@style/TextStyleB">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="TextStyle20B" parent="@style/TextStyleB">
+        <item name="android:textSize">20.0sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="TextStyle20BRed" parent="@style/TextStyle20B">
+        <item name="android:textColor">#ffff0000</item>
+    </style>
+    <style name="TextStyleB" parent="@style/TextStyle">
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="TitleProgressIndicator" parent="@android:style/Widget.ProgressBar.Small">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">14.0dip</item>
+        <item name="android:layout_marginRight">15.0dip</item>
+        <item name="android:indeterminate">true</item>
+    </style>
+    <style name="TitleText">
+        <item name="android:textSize">@dimen/text_size_medium</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:id">@id/title_text</item>
+        <item name="android:paddingLeft">12.0dip</item>
+        <item name="android:paddingRight">12.0dip</item>
+        <item name="android:layout_width">0.0dip</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+</resources>

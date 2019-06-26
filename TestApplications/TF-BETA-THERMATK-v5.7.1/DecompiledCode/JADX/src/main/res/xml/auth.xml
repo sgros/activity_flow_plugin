@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<account-authenticator xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:label="@string/AppName" android:icon="@c1065drawable/ic_launcher_dr" android:accountType="org.telegram.messenger" android:smallIcon="@c1065drawable/ic_launcher_dr" android:accountPreferences="@xml/auth_menu"/>

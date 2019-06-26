@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/graph"
+	app:startDestination="@id/.Activities.SplashActivity">
+	<fragment
+		android:id="@+id/_Activities_SplashActivity"
+		android:name=".Activities.SplashActivity"
+		android:label="_Activities_SplashActivity"
+		tools:layout="@layout/_Activities_SplashActivity" >
+		<action
+			android:id="@+id/action__Activities_SplashActivity_to__Activities_TutorialActivity"
+			app:destination="@id/_Activities_TutorialActivity" />
+		<action
+			android:id="@+id/action__Activities_SplashActivity_to__Activities_MainActivity"
+			app:destination="@id/_Activities_MainActivity" />
+	</fragment>
+	<fragment
+		android:id="@+id/_Activities_MainActivity"
+		android:name=".Activities.MainActivity"
+		android:label="_Activities_MainActivity"
+		tools:layout="@layout/_Activities_MainActivity" >
+		<action
+			android:id="@+id/action__Activities_MainActivity_to__Activities_MainActivity"
+			app:destination="@id/_Activities_MainActivity" />
+		<action
+			android:id="@+id/action__Activities_MainActivity_to__Activities_ReportDetailActivity"
+			app:destination="@id/_Activities_ReportDetailActivity" />
+	</fragment>
+	<fragment
+		android:id="@+id/_Activities_ReportDetailActivity"
+		android:name=".Activities.ReportDetailActivity"
+		android:label="_Activities_ReportDetailActivity"
+		tools:layout="@layout/_Activities_ReportDetailActivity" >
+	</fragment>
+	<fragment
+		android:id="@+id/_Activities_AboutActivity"
+		android:name=".Activities.AboutActivity"
+		android:label="_Activities_AboutActivity"
+		tools:layout="@layout/_Activities_AboutActivity" >
+	</fragment>
+	<fragment
+		android:id="@+id/_Activities_HelpActivity"
+		android:name=".Activities.HelpActivity"
+		android:label="_Activities_HelpActivity"
+		tools:layout="@layout/_Activities_HelpActivity" >
+	</fragment>
+	<fragment
+		android:id="@+id/_Activities_SettingsActivity"
+		android:name=".Activities.SettingsActivity"
+		android:label="_Activities_SettingsActivity"
+		tools:layout="@layout/_Activities_SettingsActivity" >
+		<action
+			android:id="@+id/action__Activities_SettingsActivity_to__Activities_SettingsActivity"
+			app:destination="@id/_Activities_SettingsActivity" />
+	</fragment>
+	<fragment
+		android:id="@+id/_Activities_TutorialActivity"
+		android:name=".Activities.TutorialActivity"
+		android:label="_Activities_TutorialActivity"
+		tools:layout="@layout/_Activities_TutorialActivity" >
+		<action
+			android:id="@+id/action__Activities_TutorialActivity_to__Activities_MainActivity"
+			app:destination="@id/_Activities_MainActivity" />
+		<action
+			android:id="@+id/action__Activities_TutorialActivity_to__Activities_HelpActivity"
+			app:destination="@id/_Activities_HelpActivity" />
+	</fragment>
+	<fragment
+		android:id="@+id/_Activities_HistoryActivity"
+		android:name=".Activities.HistoryActivity"
+		android:label="_Activities_HistoryActivity"
+		tools:layout="@layout/_Activities_HistoryActivity" >
+		<action
+			android:id="@+id/action__Activities_HistoryActivity_to__Activities_SelectHistoryAppsActivity"
+			app:destination="@id/_Activities_SelectHistoryAppsActivity" />
+		<action
+			android:id="@+id/action__Activities_HistoryActivity_to__Activities_HistoryDetailActivity"
+			app:destination="@id/_Activities_HistoryDetailActivity" />
+		<action
+			android:id="@+id/action__Activities_HistoryActivity_to__Activities_AppConnections_Chart"
+			app:destination="@id/_Activities_AppConnections_Chart" />
+	</fragment>
+	<fragment
+		android:id="@+id/_Activities_HistoryDetailActivity"
+		android:name=".Activities.HistoryDetailActivity"
+		android:label="_Activities_HistoryDetailActivity"
+		tools:layout="@layout/_Activities_HistoryDetailActivity" >
+	</fragment>
+	<fragment
+		android:id="@+id/_Activities_SelectHistoryAppsActivity"
+		android:name=".Activities.SelectHistoryAppsActivity"
+		android:label="_Activities_SelectHistoryAppsActivity"
+		tools:layout="@layout/_Activities_SelectHistoryAppsActivity" >
+	</fragment>
+	<fragment
+		android:id="@+id/_Activities_AppConnections_Chart"
+		android:name=".Activities.AppConnections_Chart"
+		android:label="_Activities_AppConnections_Chart"
+		tools:layout="@layout/_Activities_AppConnections_Chart" >
+	</fragment>
+</navigation>

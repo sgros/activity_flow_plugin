@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="mapgenerator_values">
+        <item>blank</item>
+        <item>map file [*.map] (offline)</item>
+        <item>OSM Mapnik (online)</item>
+        <item>OSM.de (online)</item>
+        <item>OpenCycleMap (online)</item>
+        <item>OpenTransportMap (online)</item>
+        <item>OpenMapSurfer (online)</item>
+        <item>MapQuest OSM (online)</item>
+        <item>MapQuest Aerial (online)</item>
+        <item>TF OpenCycleMap (online)</item>
+        <item>TF Transport (online)</item>
+        <item>TF Landscape (online)</item>
+        <item>TF Outdoors (online)</item>
+        <item>Esri World Street (online)</item>
+        <item>Esri World Imagery (online)</item>
+    </array>
+    <array name="preferences_scale_bar_unit_values">
+        <item>Imperialistisk</item>
+        <item>Metrisk</item>
+    </array>
+    <array name="preferences_text_scale_values">
+        <item>Mikro</item>
+        <item>Liten</item>
+        <item>Normal</item>
+        <item>Stor</item>
+        <item>Gedigen</item>
+    </array>
+</resources>

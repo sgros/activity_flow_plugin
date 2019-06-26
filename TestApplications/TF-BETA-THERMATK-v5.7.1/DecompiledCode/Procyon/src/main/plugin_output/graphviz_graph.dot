@@ -1,0 +1,20 @@
+digraph application_graph {
+	rankdir = LR;
+	node [	fontname = "Arial",
+			fontsize = 10,
+			shape = oval];
+	org_telegram_ui_LaunchActivity;
+	node [	fontname = "Arial",
+			fontsize = 10,
+			shape = box];
+	org_telegram_ui_LaunchActivity -> org_telegram_ui_IntroActivity;
+	org_telegram_ui_ShareActivity;
+	org_telegram_ui_ExternalActionActivity;
+	org_telegram_ui_IntroActivity;
+	org_telegram_messenger_OpenChatReceiver -> org_telegram_ui_LaunchActivity;
+	org_telegram_ui_PopupNotificationActivity -> org_telegram_ui_LaunchActivity;
+	org_telegram_ui_VoIPActivity -> org_telegram_ui_LaunchActivity;
+	org_telegram_ui_VoIPGroupActivity;
+	org_telegram_ui_VoIPPermissionActivity -> org_telegram_ui_VoIPActivity;
+	org_telegram_ui_VoIPFeedbackActivity;
+}

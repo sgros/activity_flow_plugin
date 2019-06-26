@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="top" android:orientation="vertical" android:id="@id/rootLayout" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:id="@id/scrollView1" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <LinearLayout android:gravity="top" android:orientation="vertical" android:id="@id/linearLayoutFiles" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </ScrollView>
+    <LinearLayout android:layout_gravity="center" android:id="@id/linearLayoutButtons" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:id="@id/buttonAdd" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/daidalos_new_file" android:drawableLeft="@drawable/add" android:layout_weight="1.0" />
+        <Button android:id="@id/buttonOk" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/daidalos_ok" android:drawableLeft="@drawable/tick" android:layout_weight="1.0" />
+        <Button android:id="@id/buttonCancel" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/daidalos_cancel" android:drawableLeft="@drawable/no" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

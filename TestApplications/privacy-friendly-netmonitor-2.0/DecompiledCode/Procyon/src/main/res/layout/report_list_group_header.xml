@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="?android:listPreferredItemHeight"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textColor="@android:color/black" android:id="@id/reportGroupTitle_header" android:paddingLeft="@dimen/nav_header_vertical_spacing" android:paddingTop="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="App Name" android:layout_alignParentTop="true" android:layout_toEndOf="@id/reportGroupIcon_header" />
+    <TextView android:textSize="12.0sp" android:ellipsize="marquee" android:id="@id/reportGroupSubtitle_header" android:paddingLeft="@dimen/nav_header_vertical_spacing" android:layout_width="fill_parent" android:layout_height="26.0dip" android:text="full.package.name" android:layout_below="@id/reportGroupTitle_header" android:layout_alignParentBottom="true" android:layout_toEndOf="@id/reportGroupIcon_header" android:layout_alignParentEnd="true" />
+    <ImageView android:id="@id/reportGroupIcon_header" android:paddingLeft="?android:expandableListPreferredItemPaddingLeft" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:layout_width="60.0dip" android:layout_height="60.0dip" android:src="@mipmap/ic_launcher" android:adjustViewBounds="true" android:cropToPadding="false" android:foregroundGravity="center_vertical" android:paddingStart="@dimen/activity_vertical_margin" />
+</RelativeLayout>

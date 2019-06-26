@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/graph"
+	app:startDestination="@id/org.secuso.privacyfriendlynetmonitor.Activities.SplashActivity">
+	<fragment
+		android:id="@+id/org_secuso_privacyfriendlynetmonitor_Activities_SplashActivity"
+		android:name="org.secuso.privacyfriendlynetmonitor.Activities.SplashActivity"
+		android:label="org_secuso_privacyfriendlynetmonitor_Activities_SplashActivity"
+		tools:layout="@layout/org_secuso_privacyfriendlynetmonitor_Activities_SplashActivity" >
+		<action
+			android:id="@+id/action_org_secuso_privacyfriendlynetmonitor_Activities_SplashActivity_to_org_secuso_privacyfriendlynetmonitor_Activities_TutorialActivity"
+			app:destination="@id/org_secuso_privacyfriendlynetmonitor_Activities_TutorialActivity" />
+		<action
+			android:id="@+id/action_org_secuso_privacyfriendlynetmonitor_Activities_SplashActivity_to_org_secuso_privacyfriendlynetmonitor_Activities_MainActivity"
+			app:destination="@id/org_secuso_privacyfriendlynetmonitor_Activities_MainActivity" />
+	</fragment>
+	<fragment
+		android:id="@+id/org_secuso_privacyfriendlynetmonitor_Activities_MainActivity"
+		android:name="org.secuso.privacyfriendlynetmonitor.Activities.MainActivity"
+		android:label="org_secuso_privacyfriendlynetmonitor_Activities_MainActivity"
+		tools:layout="@layout/org_secuso_privacyfriendlynetmonitor_Activities_MainActivity" >
+		<action
+			android:id="@+id/action_org_secuso_privacyfriendlynetmonitor_Activities_MainActivity_to_org_secuso_privacyfriendlynetmonitor_Activities_ReportDetailActivity"
+			app:destination="@id/org_secuso_privacyfriendlynetmonitor_Activities_ReportDetailActivity" />
+		<action
+			android:id="@+id/action_org_secuso_privacyfriendlynetmonitor_Activities_MainActivity_to_org_secuso_privacyfriendlynetmonitor_Activities_MainActivity"
+			app:destination="@id/org_secuso_privacyfriendlynetmonitor_Activities_MainActivity" />
+	</fragment>
+	<fragment
+		android:id="@+id/org_secuso_privacyfriendlynetmonitor_Activities_ReportDetailActivity"
+		android:name="org.secuso.privacyfriendlynetmonitor.Activities.ReportDetailActivity"
+		android:label="org_secuso_privacyfriendlynetmonitor_Activities_ReportDetailActivity"
+		tools:layout="@layout/org_secuso_privacyfriendlynetmonitor_Activities_ReportDetailActivity" >
+	</fragment>
+	<fragment
+		android:id="@+id/org_secuso_privacyfriendlynetmonitor_Activities_AboutActivity"
+		android:name="org.secuso.privacyfriendlynetmonitor.Activities.AboutActivity"
+		android:label="org_secuso_privacyfriendlynetmonitor_Activities_AboutActivity"
+		tools:layout="@layout/org_secuso_privacyfriendlynetmonitor_Activities_AboutActivity" >
+	</fragment>
+	<fragment
+		android:id="@+id/org_secuso_privacyfriendlynetmonitor_Activities_HelpActivity"
+		android:name="org.secuso.privacyfriendlynetmonitor.Activities.HelpActivity"
+		android:label="org_secuso_privacyfriendlynetmonitor_Activities_HelpActivity"
+		tools:layout="@layout/org_secuso_privacyfriendlynetmonitor_Activities_HelpActivity" >
+	</fragment>
+	<fragment
+		android:id="@+id/org_secuso_privacyfriendlynetmonitor_Activities_SettingsActivity"
+		android:name="org.secuso.privacyfriendlynetmonitor.Activities.SettingsActivity"
+		android:label="org_secuso_privacyfriendlynetmonitor_Activities_SettingsActivity"
+		tools:layout="@layout/org_secuso_privacyfriendlynetmonitor_Activities_SettingsActivity" >
+		<action
+			android:id="@+id/action_org_secuso_privacyfriendlynetmonitor_Activities_SettingsActivity_to_org_secuso_privacyfriendlynetmonitor_Activities_SettingsActivity"
+			app:destination="@id/org_secuso_privacyfriendlynetmonitor_Activities_SettingsActivity" />
+	</fragment>
+	<fragment
+		android:id="@+id/org_secuso_privacyfriendlynetmonitor_Activities_TutorialActivity"
+		android:name="org.secuso.privacyfriendlynetmonitor.Activities.TutorialActivity"
+		android:label="org_secuso_privacyfriendlynetmonitor_Activities_TutorialActivity"
+		tools:layout="@layout/org_secuso_privacyfriendlynetmonitor_Activities_TutorialActivity" >
+		<action
+			android:id="@+id/action_org_secuso_privacyfriendlynetmonitor_Activities_TutorialActivity_to_org_secuso_privacyfriendlynetmonitor_Activities_HelpActivity"
+			app:destination="@id/org_secuso_privacyfriendlynetmonitor_Activities_HelpActivity" />
+		<action
+			android:id="@+id/action_org_secuso_privacyfriendlynetmonitor_Activities_TutorialActivity_to_org_secuso_privacyfriendlynetmonitor_Activities_MainActivity"
+			app:destination="@id/org_secuso_privacyfriendlynetmonitor_Activities_MainActivity" />
+	</fragment>
+	<fragment
+		android:id="@+id/org_secuso_privacyfriendlynetmonitor_Activities_HistoryActivity"
+		android:name="org.secuso.privacyfriendlynetmonitor.Activities.HistoryActivity"
+		android:label="org_secuso_privacyfriendlynetmonitor_Activities_HistoryActivity"
+		tools:layout="@layout/org_secuso_privacyfriendlynetmonitor_Activities_HistoryActivity" >
+		<action
+			android:id="@+id/action_org_secuso_privacyfriendlynetmonitor_Activities_HistoryActivity_to_org_secuso_privacyfriendlynetmonitor_Activities_HistoryDetailActivity"
+			app:destination="@id/org_secuso_privacyfriendlynetmonitor_Activities_HistoryDetailActivity" />
+		<action
+			android:id="@+id/action_org_secuso_privacyfriendlynetmonitor_Activities_HistoryActivity_to_org_secuso_privacyfriendlynetmonitor_Activities_AppConnections_Chart"
+			app:destination="@id/org_secuso_privacyfriendlynetmonitor_Activities_AppConnections_Chart" />
+		<action
+			android:id="@+id/action_org_secuso_privacyfriendlynetmonitor_Activities_HistoryActivity_to_org_secuso_privacyfriendlynetmonitor_Activities_SelectHistoryAppsActivity"
+			app:destination="@id/org_secuso_privacyfriendlynetmonitor_Activities_SelectHistoryAppsActivity" />
+	</fragment>
+	<fragment
+		android:id="@+id/org_secuso_privacyfriendlynetmonitor_Activities_HistoryDetailActivity"
+		android:name="org.secuso.privacyfriendlynetmonitor.Activities.HistoryDetailActivity"
+		android:label="org_secuso_privacyfriendlynetmonitor_Activities_HistoryDetailActivity"
+		tools:layout="@layout/org_secuso_privacyfriendlynetmonitor_Activities_HistoryDetailActivity" >
+	</fragment>
+	<fragment
+		android:id="@+id/org_secuso_privacyfriendlynetmonitor_Activities_SelectHistoryAppsActivity"
+		android:name="org.secuso.privacyfriendlynetmonitor.Activities.SelectHistoryAppsActivity"
+		android:label="org_secuso_privacyfriendlynetmonitor_Activities_SelectHistoryAppsActivity"
+		tools:layout="@layout/org_secuso_privacyfriendlynetmonitor_Activities_SelectHistoryAppsActivity" >
+	</fragment>
+	<fragment
+		android:id="@+id/org_secuso_privacyfriendlynetmonitor_Activities_AppConnections_Chart"
+		android:name="org.secuso.privacyfriendlynetmonitor.Activities.AppConnections_Chart"
+		android:label="org_secuso_privacyfriendlynetmonitor_Activities_AppConnections_Chart"
+		tools:layout="@layout/org_secuso_privacyfriendlynetmonitor_Activities_AppConnections_Chart" >
+	</fragment>
+</navigation>

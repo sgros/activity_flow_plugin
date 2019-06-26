@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/graph"
+	app:startDestination="@id/org.telegram.p004ui.LaunchActivity">
+	<fragment
+		android:id="@+id/org_telegram_p004ui_LaunchActivity"
+		android:name="org.telegram.p004ui.LaunchActivity"
+		android:label="org_telegram_p004ui_LaunchActivity"
+		tools:layout="@layout/org_telegram_p004ui_LaunchActivity" >
+		<action
+			android:id="@+id/action_org_telegram_p004ui_LaunchActivity_to_org_telegram_p004ui_IntroActivity"
+			app:destination="@id/org_telegram_p004ui_IntroActivity" />
+	</fragment>
+	<fragment
+		android:id="@+id/org_telegram_p004ui_ShareActivity"
+		android:name="org.telegram.p004ui.ShareActivity"
+		android:label="org_telegram_p004ui_ShareActivity"
+		tools:layout="@layout/org_telegram_p004ui_ShareActivity" >
+	</fragment>
+	<fragment
+		android:id="@+id/org_telegram_p004ui_ExternalActionActivity"
+		android:name="org.telegram.p004ui.ExternalActionActivity"
+		android:label="org_telegram_p004ui_ExternalActionActivity"
+		tools:layout="@layout/org_telegram_p004ui_ExternalActionActivity" >
+	</fragment>
+	<fragment
+		android:id="@+id/org_telegram_p004ui_IntroActivity"
+		android:name="org.telegram.p004ui.IntroActivity"
+		android:label="org_telegram_p004ui_IntroActivity"
+		tools:layout="@layout/org_telegram_p004ui_IntroActivity" >
+		<action
+			android:id="@+id/action_org_telegram_p004ui_IntroActivity_to_org_telegram_p004ui_LaunchActivity"
+			app:destination="@id/org_telegram_p004ui_LaunchActivity" />
+	</fragment>
+	<fragment
+		android:id="@+id/org_telegram_messenger_OpenChatReceiver"
+		android:name="org.telegram.messenger.OpenChatReceiver"
+		android:label="org_telegram_messenger_OpenChatReceiver"
+		tools:layout="@layout/org_telegram_messenger_OpenChatReceiver" >
+		<action
+			android:id="@+id/action_org_telegram_messenger_OpenChatReceiver_to_org_telegram_p004ui_LaunchActivity"
+			app:destination="@id/org_telegram_p004ui_LaunchActivity" />
+	</fragment>
+	<fragment
+		android:id="@+id/org_telegram_ui_PopupNotificationActivity"
+		android:name="org.telegram.ui.PopupNotificationActivity"
+		android:label="org_telegram_ui_PopupNotificationActivity"
+		tools:layout="@layout/org_telegram_ui_PopupNotificationActivity" >
+	</fragment>
+	<fragment
+		android:id="@+id/org_telegram_p004ui_VoIPActivity"
+		android:name="org.telegram.p004ui.VoIPActivity"
+		android:label="org_telegram_p004ui_VoIPActivity"
+		tools:layout="@layout/org_telegram_p004ui_VoIPActivity" >
+		<action
+			android:id="@+id/action_org_telegram_p004ui_VoIPActivity_to_org_telegram_p004ui_LaunchActivity"
+			app:destination="@id/org_telegram_p004ui_LaunchActivity" />
+	</fragment>
+	<fragment
+		android:id="@+id/org_telegram_p004ui_VoIPGroupActivity"
+		android:name="org.telegram.p004ui.VoIPGroupActivity"
+		android:label="org_telegram_p004ui_VoIPGroupActivity"
+		tools:layout="@layout/org_telegram_p004ui_VoIPGroupActivity" >
+	</fragment>
+	<fragment
+		android:id="@+id/org_telegram_p004ui_VoIPPermissionActivity"
+		android:name="org.telegram.p004ui.VoIPPermissionActivity"
+		android:label="org_telegram_p004ui_VoIPPermissionActivity"
+		tools:layout="@layout/org_telegram_p004ui_VoIPPermissionActivity" >
+		<action
+			android:id="@+id/action_org_telegram_p004ui_VoIPPermissionActivity_to_org_telegram_p004ui_VoIPActivity"
+			app:destination="@id/org_telegram_p004ui_VoIPActivity" />
+	</fragment>
+	<fragment
+		android:id="@+id/org_telegram_p004ui_VoIPFeedbackActivity"
+		android:name="org.telegram.p004ui.VoIPFeedbackActivity"
+		android:label="org_telegram_p004ui_VoIPFeedbackActivity"
+		tools:layout="@layout/org_telegram_p004ui_VoIPFeedbackActivity" >
+	</fragment>
+</navigation>

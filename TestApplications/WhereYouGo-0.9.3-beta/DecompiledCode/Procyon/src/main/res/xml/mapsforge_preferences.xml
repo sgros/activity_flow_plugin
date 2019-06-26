@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/menu_preferences"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/preferences_map">
+        <CheckBoxPreference android:title="@string/preferences_show_scale_bar" android:key="showScaleBar" android:summary="@string/preferences_show_scale_bar_desc" />
+        <ListPreference android:entries="@array/preferences_scale_bar_unit_values" android:title="@string/preferences_scale_bar_unit" android:key="scaleBarUnit" android:summary="@string/preferences_scale_bar_unit_desc" android:dependency="showScaleBar" android:defaultValue="@string/preferences_scale_bar_unit_default" android:entryValues="@array/preferences_scale_bar_unit_keys" />
+        <ListPreference android:entries="@array/preferences_text_scale_values" android:title="@string/preferences_text_scale" android:key="textScale" android:summary="@string/preferences_text_scale_desc" android:defaultValue="@string/preferences_text_scale_default" android:entryValues="@array/preferences_text_scale_keys" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/preferences_general">
+        <CheckBoxPreference android:title="@string/preferences_fullscreen" android:key="fullscreen" android:summary="@string/preferences_fullscreen_desc" />
+        <CheckBoxPreference android:title="@string/preferences_wake_lock" android:key="wakeLock" android:summary="@string/preferences_wake_lock_desc" />
+        <CheckBoxPreference android:title="@string/preferences_cache_persistence" android:key="cachePersistence" android:summary="@string/preferences_cache_persistence_desc" />
+        <menion.android.whereyougo.maps.mapsforge.preferences.CacheSizePreference android:title="@string/preferences_cache_size" android:key="cacheSize" android:summary="@string/preferences_cache_size_desc" />
+        <menion.android.whereyougo.maps.mapsforge.preferences.MoveSpeedPreference android:title="@string/preferences_move_speed" android:key="moveSpeed" android:summary="@string/preferences_move_speed_desc" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/preferences_debug">
+        <CheckBoxPreference android:title="@string/preferences_show_fps_counter" android:key="showFpsCounter" android:summary="@string/preferences_show_fps_counter_desc" />
+        <CheckBoxPreference android:title="@string/preferences_show_tile_frames" android:key="drawTileFrames" android:summary="@string/preferences_show_tile_frames_desc" />
+        <CheckBoxPreference android:title="@string/preferences_show_tile_coordinates" android:key="drawTileCoordinates" android:summary="@string/preferences_show_tile_coordinates_desc" />
+        <CheckBoxPreference android:title="@string/preferences_show_water_tiles" android:key="highlightWaterTiles" android:summary="@string/preferences_show_water_tiles_desc" />
+    </PreferenceCategory>
+</PreferenceScreen>

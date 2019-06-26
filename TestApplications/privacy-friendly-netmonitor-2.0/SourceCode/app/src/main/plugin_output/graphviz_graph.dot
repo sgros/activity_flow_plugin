@@ -1,0 +1,26 @@
+digraph application_graph {
+	rankdir = LR;
+	node [	fontname = "Arial",
+			fontsize = 10,
+			shape = oval];
+	_Activities_SplashActivity;
+	node [	fontname = "Arial",
+			fontsize = 10,
+			shape = box];
+	_Activities_SplashActivity -> _Activities_TutorialActivity;
+	_Activities_SplashActivity -> _Activities_MainActivity;
+	_Activities_MainActivity -> _Activities_MainActivity;
+	_Activities_MainActivity -> _Activities_ReportDetailActivity;
+	_Activities_ReportDetailActivity;
+	_Activities_AboutActivity;
+	_Activities_HelpActivity;
+	_Activities_SettingsActivity -> _Activities_SettingsActivity;
+	_Activities_TutorialActivity -> _Activities_MainActivity;
+	_Activities_TutorialActivity -> _Activities_HelpActivity;
+	_Activities_HistoryActivity -> _Activities_SelectHistoryAppsActivity;
+	_Activities_HistoryActivity -> _Activities_HistoryDetailActivity;
+	_Activities_HistoryActivity -> _Activities_AppConnections_Chart;
+	_Activities_HistoryDetailActivity;
+	_Activities_SelectHistoryAppsActivity;
+	_Activities_AppConnections_Chart;
+}

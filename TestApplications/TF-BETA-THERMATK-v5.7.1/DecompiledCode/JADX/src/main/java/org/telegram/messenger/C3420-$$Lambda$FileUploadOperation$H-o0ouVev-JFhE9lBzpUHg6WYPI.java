@@ -1,0 +1,17 @@
+package org.telegram.messenger;
+
+import org.telegram.tgnet.WriteToSocketDelegate;
+
+/* compiled from: lambda */
+/* renamed from: org.telegram.messenger.-$$Lambda$FileUploadOperation$H-o0ouVev-JFhE9lBzpUHg6WYPI */
+public final /* synthetic */ class C3420-$$Lambda$FileUploadOperation$H-o0ouVev-JFhE9lBzpUHg6WYPI implements WriteToSocketDelegate {
+    private final /* synthetic */ FileUploadOperation f$0;
+
+    public /* synthetic */ C3420-$$Lambda$FileUploadOperation$H-o0ouVev-JFhE9lBzpUHg6WYPI(FileUploadOperation fileUploadOperation) {
+        this.f$0 = fileUploadOperation;
+    }
+
+    public final void run() {
+        this.f$0.lambda$startUploadRequest$6$FileUploadOperation();
+    }
+}

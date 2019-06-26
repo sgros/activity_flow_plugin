@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView android:padding="5dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@c0253id/linear_layout_bottom">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <include layout="@layout/include_media"/>
+            <TextView android:id="@c0253id/layoutInputTextView" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginBottom="5dp"/>
+            <EditText android:id="@c0253id/layoutInputEditText" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="text"/>
+            <Button android:layout_gravity="center_horizontal" android:id="@c0253id/layoutInputScanButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/scanQR"/>
+            <Spinner android:id="@c0253id/layoutInputSpinner" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </ScrollView>
+    <include layout="@layout/include_bottom_panel"/>
+</RelativeLayout>

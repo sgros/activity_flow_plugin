@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/mainView" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <menion.android.whereyougo.maps.mapsforge.MyMapView android:id="@id/mapView" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ToggleButton android:id="@id/snapToLocationView" android:background="@drawable/snap_to_position_toggle" android:visibility="gone" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="5.0dip" android:textOn="" android:textOff="" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+    <ToggleButton android:id="@id/showPinsView" android:background="@drawable/show_pins_toggle" android:visibility="visible" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginTop="60.0dip" android:layout_marginRight="5.0dip" android:textOn="" android:textOff="" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+    <ToggleButton android:id="@id/showLabelsView" android:background="@drawable/show_labels_toggle" android:visibility="visible" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginTop="110.0dip" android:layout_marginRight="5.0dip" android:textOn="" android:textOff="" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+    <TextView android:textSize="10.0sp" android:textColor="@android:color/black" android:autoLink="web" android:id="@id/attribution" android:background="#7fffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+</RelativeLayout>

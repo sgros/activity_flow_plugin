@@ -1,0 +1,30 @@
+package org.telegram.messenger;
+
+import android.util.LongSparseArray;
+import org.telegram.tgnet.TLRPC.messages_Dialogs;
+
+/* compiled from: lambda */
+/* renamed from: org.telegram.messenger.-$$Lambda$MessagesController$yD6NgtKkjxhJizLM4eoCQwHgn60 */
+public final /* synthetic */ class C0736-$$Lambda$MessagesController$yD6NgtKkjxhJizLM4eoCQwHgn60 implements Runnable {
+    private final /* synthetic */ MessagesController f$0;
+    private final /* synthetic */ int f$1;
+    private final /* synthetic */ int f$2;
+    private final /* synthetic */ int f$3;
+    private final /* synthetic */ messages_Dialogs f$4;
+    private final /* synthetic */ LongSparseArray f$5;
+    private final /* synthetic */ LongSparseArray f$6;
+
+    public /* synthetic */ C0736-$$Lambda$MessagesController$yD6NgtKkjxhJizLM4eoCQwHgn60(MessagesController messagesController, int i, int i2, int i3, messages_Dialogs messages_dialogs, LongSparseArray longSparseArray, LongSparseArray longSparseArray2) {
+        this.f$0 = messagesController;
+        this.f$1 = i;
+        this.f$2 = i2;
+        this.f$3 = i3;
+        this.f$4 = messages_dialogs;
+        this.f$5 = longSparseArray;
+        this.f$6 = longSparseArray2;
+    }
+
+    public final void run() {
+        this.f$0.lambda$completeDialogsReset$122$MessagesController(this.f$1, this.f$2, this.f$3, this.f$4, this.f$5, this.f$6);
+    }
+}

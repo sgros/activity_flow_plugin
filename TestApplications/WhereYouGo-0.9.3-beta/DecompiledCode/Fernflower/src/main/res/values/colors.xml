@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="daidalos_active_file">#ffffffff</color>
+    <color name="daidalos_backgroud">#ff000000</color>
+    <color name="daidalos_gray">#ff888888</color>
+    <color name="daidalos_inactive_file">#ff888888</color>
+    <color name="btn_disabled">#80aaaaaa</color>
+    <color name="title_background">#aa053a88</color>
+    <color name="title_separator">#40ffffff</color>
+    <color name="title_separator_dark">#40000000</color>
+    <color name="zxing_custom_possible_result_points">#903a89cf</color>
+    <color name="zxing_custom_result_view">#b0000000</color>
+    <color name="zxing_custom_viewfinder_laser">#ff1976d2</color>
+    <color name="zxing_custom_viewfinder_mask">#60000000</color>
+    <color name="zxing_possible_result_points">#c0ffbd21</color>
+    <color name="zxing_result_view">#b0000000</color>
+    <color name="zxing_status_text">#ffffffff</color>
+    <color name="zxing_transparent">#00000000</color>
+    <color name="zxing_viewfinder_laser">#ffcc0000</color>
+    <color name="zxing_viewfinder_mask">#60000000</color>
+</resources>
