@@ -1,2 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<android.support.p004v7.widget.RecyclerView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@c0426id/main_list" android:layout_width="296dp" android:layout_height="wrap_content" android:minHeight="186.67dp" android:overScrollMode="never" app:layoutManager="android.support.v7.widget.GridLayoutManager" app:spanCount="4"/>

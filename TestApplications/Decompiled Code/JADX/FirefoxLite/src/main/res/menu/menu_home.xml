@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
-    <item android:id="@c0426id/about" android:title="@string/menu_about"/>
-    <item android:id="@c0426id/help" android:title="@string/menu_help"/>
-    <item android:id="@c0426id/rights" android:title="@string/menu_rights"/>
-    <item android:id="@c0426id/settings" android:title="@string/menu_settings"/>
-</menu>

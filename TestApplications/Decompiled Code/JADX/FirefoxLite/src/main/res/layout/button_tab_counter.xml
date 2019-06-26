@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
-    <FrameLayout android:id="@c0426id/counter_root" android:layout_width="20dp" android:layout_height="20dp" android:layout_marginTop="0.5dp" android:layout_centerHorizontal="true" android:layout_centerVertical="true">
-        <org.mozilla.rocket.nightmode.themed.ThemedImageView android:id="@c0426id/counter_box" android:layout_width="20dp" android:layout_height="20dp" android:src="@drawable/tab_counter_box"/>
-        <org.mozilla.rocket.nightmode.themed.ThemedTextView android:textSize="12sp" android:textStyle="bold" android:textColor="@color/colorMenuIconForeground" android:layout_gravity="center" android:id="@c0426id/counter_text" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
-    </FrameLayout>
-    <org.mozilla.rocket.nightmode.themed.ThemedImageView android:id="@c0426id/counter_bar" android:layout_width="20dp" android:layout_height="2dp" android:layout_marginTop="1dp" android:src="@drawable/tab_counter_bar" android:layout_below="@c0426id/counter_root" android:layout_centerHorizontal="true"/>
-</merge>

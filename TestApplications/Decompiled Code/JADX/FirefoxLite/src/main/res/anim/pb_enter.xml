@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<set xmlns:android="http://schemas.android.com/apk/res/android" android:interpolator="@anim/ease_in_interpolator" android:duration="180">
-    <scale android:fromXScale="40%" android:toXScale="100%" android:fromYScale="40%" android:toYScale="100%"/>
-    <translate android:fromYDelta="66%" android:toYDelta="0%"/>
-    <alpha android:fromAlpha="0" android:toAlpha="1"/>
-</set>

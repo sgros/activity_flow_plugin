@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
-    <TextView android:gravity="center" android:id="@c0499id/noData" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/nodata"/>
-    <ExpandableListView android:id="@c0499id/list_history" android:paddingTop="64dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indicatorLeft="?android:attr/expandableListPreferredItemIndicatorLeft" android:divider="@android:color/darker_gray" android:dividerHeight="0.5dp"/>
-    <ProgressBar android:id="@c0499id/selectHistoryProgressBar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_centerVertical="true"/>
-</RelativeLayout>

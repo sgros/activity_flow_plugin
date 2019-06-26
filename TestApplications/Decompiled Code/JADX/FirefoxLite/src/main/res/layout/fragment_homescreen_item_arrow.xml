@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="48dp" android:layout_height="48dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0">
-    <include android:id="@c0426id/arrow1" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toTopOf="@c0426id/arrow2" app:layout_constraintEnd_toEndOf="@c0426id/arrow2" app:layout_constraintStart_toStartOf="@c0426id/arrow2" layout="@layout/button_content"/>
-    <include android:id="@c0426id/arrow2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="12dp" android:layout_alignParentBottom="true" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" layout="@layout/button_content"/>
-    <View android:id="@c0426id/arrow_container" android:layout_width="match_parent" android:layout_height="match_parent"/>
-</android.support.constraint.ConstraintLayout>

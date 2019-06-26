@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:paddingTop="@dimen/activity_vertical_margin" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_behavior="@string/appbar_scrolling_view_behavior">
-    <TextView android:id="@c0499id/report_detail_ssllabs_result" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="8dp" android:text="@string/report_detail_ssllabs" android:layout_marginStart="16dp"/>
-    <ListView android:id="@c0499id/report_detail_list_view" android:layout_width="match_parent" android:layout_height="match_parent" android:divider="@android:color/darker_gray" android:dividerHeight="0.5dp"/>
-</LinearLayout>

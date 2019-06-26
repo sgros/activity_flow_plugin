@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_horizontal" android:id="@c0426id/pm_home_back" android:focusable="true" android:clickable="true" style="@style/HomeMenuButton">
-    <com.airbnb.lottie.LottieAnimationView android:id="@c0426id/pm_home_mask" app:lottie_autoPlay="false" app:lottie_fileName="mask.json" app:lottie_loop="false" style="@style/MainMenuButton"/>
-</RelativeLayout>

@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" style="@style/MainMenuButton">
-    <org.mozilla.rocket.nightmode.themed.ThemedImageButton android:id="@c0426id/btn_menu" android:src="@drawable/action_menu" android:tint="@color/browser_menu_button" style="@style/MainMenuButton"/>
-    <com.airbnb.lottie.LottieAnimationView android:id="@c0426id/downloading_indicator" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentEnd="true" app:lottie_fileName="notify_downloading.json" app:lottie_loop="true"/>
-    <ImageView android:id="@c0426id/download_unread_indicator" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/notify_download" android:layout_alignParentEnd="true"/>
-</RelativeLayout>

@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
-    <TextView android:textStyle="bold" android:id="@c0499id/app_item_1" android:paddingTop="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="example.hostname.net" android:paddingStart="?android:attr/expandableListPreferredChildPaddingLeft"/>
-</RelativeLayout>
