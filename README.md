@@ -18,3 +18,10 @@ To install plugin, download plugin jar file located in release tab of this proje
 
 ### How to use plugin
 
+1. With AndroidProjectCreator (https://github.com/ThisIsLibra/AndroidProjectCreator) create Android Studio project from APK file
+2. Start Android Studio and open created Android Studio project
+3. Plugin will be enabled after every setup and build in Android Studio is completed
+4. Go to: Activity Flow > Generate
+5. In window "Choose Project" current project is already selected, click OK
+6. Message "Operation successful." is shown
+7. File *graphviz_graph.dot* is created in directory "path_to_project"/app/src/main/graphviz/ and file *navigation_graph.xml* is created in directory "path_to_project"/app/src/main/res/navigation/
