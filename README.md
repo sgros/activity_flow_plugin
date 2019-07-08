@@ -1,7 +1,6 @@
-### IntelliJ IDEA Installation And Steps For Importing Gradle (Plugin) Projects
+### Steps For Importing Gradle (Plugin) Projects Into IntelliJ IDEA
 
-0. Prerequisites: Installed JRE and JDK
-1. Run idea.sh
+1. Start IntelliJ IDEA
 2. Click on "Import Project"
 3. Find folder containing your gradle project, navigate to file build.gradle, select it and click OK
 4. In window "Import Project from Gradle" leave everything as is and click OK
@@ -15,4 +14,7 @@
 
 ### Plugin installation
 
-To install plugin, download plugin jar file located in release tab of this project (https://github.com/Crash10/code_tree_plugin/releases). After downloading, in Android Studio go to: File > Settings > Plugins > Install Plugin from Disk and then find and select downloaded jar file. Restart Android Studio to apply changes.
+To install plugin, download plugin jar file located in release tab of this project (https://github.com/Crash10/activity_flow_plugin/releases). After downloading, in Android Studio go to: File > Settings > Plugins > Install Plugin from Disk and then find and select downloaded jar file. Restart Android Studio to apply changes.
+
+### How to use plugin
+
